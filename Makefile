@@ -1,38 +1,30 @@
-FILE ?= dynamic_array
-# Automatically append .sv if omitted
-SRC  := $(if $(filter %.sv,$(FILE)),$(FILE),$(FILE).sv)
-TOP  ?= tb
+# ==============================================================================
+# Dynamic Vivado Simulator Makefile
+# Usage: make all SRC=chapter4_ex.sv TOP=tb
+# ==============================================================================
 
-# OS Detection: Windows vs Linux/macOS
-ifeq ($(OS),Windows_NT)
-    SHELL := cmd.exe
-    CHECK_FILE = @if not exist $(SRC) ( \
-        echo [ERROR] File '$(SRC)' not found! & \
-        echo Please create '$(SRC)' first or check the filename. & \
-        exit /b 1 \
-    )
-    CLEAN_CMD = @if exist xsim.dir rmdir /s /q xsim.dir & \
-                @if exist .Xil rmdir /s /q .Xil & \
-                @del /f /q *.log *.jou *.pb 2>nul & exit 0
-else
-    SHELL := /bin/bash
-    CHECK_FILE = @if [ ! -f "$(SRC)" ]; then \
-        echo "[ERROR] File '$(SRC)' not found!"; \
-        echo "Please create '$(SRC)' first or check the filename."; \
-        exit 1; \
-    fi
-    CLEAN_CMD = @rm -rf xsim.dir .Xil *.log *.jou *.pb
-endif
+# 1. Default Variables (Used if you just type 'make all')
+SRC ?= dynamic_array.sv
+TOP ?= tb
+SNAP ?= snap_sim
 
-.PHONY: all run clean
+# 2. Main Targets
+.PHONY: all compile elab run clean
 
-all: run
+all: clean compile elab run
 
-run:
-	$(CHECK_FILE)
+# Step 1: Compile the source file passed via SRC
+compile:
 	xvlog -sv $(SRC)
-	xelab $(TOP) -s snap_sim
-	xsim snap_sim -runall
 
+# Step 2: Elaborate the module passed via TOP
+elab:
+	xelab $(TOP) -s $(SNAP)
+
+# Step 3: Run the simulation
+run:
+	xsim $(SNAP) -runall
+
+# Clean up temporary compilation files and log files
 clean:
-	$(CLEAN_CMD)
+	rm -rf xsim.dir xvlog.log xelab.log xsim.log xvlog.pb xelab.pb

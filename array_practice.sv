@@ -56,11 +56,9 @@ module automatic tb;
       automatic int data_queue [$] = '{1, 2, 3};
       $display("Initial queue: %p", data_queue);
 
-      // 1. In-place reverse (supported in Vivado 2026)
       data_queue.reverse();
       $display("Queue after reverse: %p", data_queue);
 
-      // 2. Pop front directly (discard return value with void'())
       void'(data_queue.pop_front());
       $display("Queue after .pop_front(): %p", data_queue);
     end

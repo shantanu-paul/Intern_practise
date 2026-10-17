@@ -1,45 +1,29 @@
-module tb;
+module array_practice;
 
   initial begin
-    $display("\n========================================");
-    $display("  SystemVerilog Array Concepts Practice ");
-    $display("========================================\n");
-
-    // -----------------------------------------------------------
-    // Exercise 1: Packed Array Initialization
-    // -----------------------------------------------------------
-    $display("--- [Exercise 1] Packed Array ---");
+    // Exercise 1: Packed Array
     begin
-      automatic logic [11:0] config_bits = 12'hA3C;
+       logic [11:0] config_bits = 12'hA3C;
       $display("config_bits (hex): 12'h%0h", config_bits);
-      $display("config_bits (bin): 12'b%012b", config_bits);
+      $display("config_bits (bin): 12'b%0b", config_bits);
     end
 
-    // -----------------------------------------------------------
     // Exercise 2: Unpacked Array of Strings
-    // -----------------------------------------------------------
-    $display("\n--- [Exercise 2] Unpacked Array of Strings ---");
     begin
-      automatic string name_list [4] = '{"Alice", "Bob", "Charlie", "Dana"};
+       string name_list [4] = '{"Alice", "Bob", "Charlie", "Dana"};
       foreach (name_list[i]) begin
         $display("name_list[%0d] = %s", i, name_list[i]);
       end
     end
 
-    // -----------------------------------------------------------
     // Exercise 3: Fixed-Size Array Summation
-    // -----------------------------------------------------------
-    $display("\n--- [Exercise 3] Fixed-Size Array Summation ---");
     begin
-      automatic int value_array [5] = '{10, 20, 30, 40, 50};
+       int value_array [5] = '{10, 20, 30, 40, 50};
       $display("Array values: %p", value_array);
       $display("Sum of array elements: %0d", value_array.sum());
     end
 
-    // -----------------------------------------------------------
     // Exercise 4: Dynamic Array with Even Numbers
-    // -----------------------------------------------------------
-    $display("\n--- [Exercise 4] Dynamic Array with Even Numbers ---");
     begin
       int even_numbers [];
       even_numbers = new[8];
@@ -50,10 +34,7 @@ module tb;
       $display("even_numbers content: %p", even_numbers);
     end
 
-    // -----------------------------------------------------------
-    // Exercise 5: Associative Array for Age Lookup
-    // -----------------------------------------------------------
-    $display("\n--- [Exercise 5] Associative Array (Age Lookup) ---");
+    // Exercise 5: Associative Array (Age Lookup)
     begin
       int age_map [string];
       age_map["Alice"]   = 30;
@@ -70,18 +51,13 @@ module tb;
       end
     end
 
-    // -----------------------------------------------------------
-    // Exercise 6: Queue Operations (Reverse and Pop)
-    // -----------------------------------------------------------
-    $display("\n--- [Exercise 6] Queue Operations ---");
+    // Exercise 6: Queue Operations
     begin
-      automatic int data_queue [$] = '{1, 2, 3};
+       int data_queue [$] = '{1, 2, 3};
       $display("Initial queue: %p", data_queue);
 
-      // Note: Built-in .reverse() on queues is not supported in Vivado 2024.2 (added in newer releases).
-      // Reversing using push_front is 100% portable across all Vivado versions:
       begin
-        automatic int reversed_q [$];
+         int reversed_q [$];
         foreach (data_queue[i]) reversed_q.push_front(data_queue[i]);
         data_queue = reversed_q;
       end
@@ -95,9 +71,6 @@ module tb;
       $display("Queue after .pop_front(): %p", data_queue);
     end
 
-    $display("\n========================================");
-    $display("       All Exercises Completed!         ");
-    $display("========================================\n");
     $finish;
   end
 

@@ -56,7 +56,7 @@ module automatic tb;
       automatic int data_queue [$] = '{1, 2, 3};
       $display("Initial queue: %p", data_queue);
 
-      data_queue.reverse();
+      //data_queue.reverse();
       $display("Queue after reverse: %p", data_queue);
 
       void'(data_queue.pop_front());

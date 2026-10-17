@@ -78,8 +78,14 @@ module tb;
       automatic int data_queue [$] = '{1, 2, 3};
       $display("Initial queue: %p", data_queue);
 
-      data_queue.reverse();
-      $display("Queue after .reverse(): %p", data_queue);
+      // Note: Built-in .reverse() on queues is not supported in Vivado 2024.2 (added in newer releases).
+      // Reversing using push_front is 100% portable across all Vivado versions:
+      begin
+        automatic int reversed_q [$];
+        foreach (data_queue[i]) reversed_q.push_front(data_queue[i]);
+        data_queue = reversed_q;
+      end
+      $display("Queue after reverse: %p", data_queue);
 
       begin
         int popped_val;

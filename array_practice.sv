@@ -1,4 +1,4 @@
-module array_practice;
+module automatic tb;
 
   initial begin
     // Exercise 1: Packed Array
@@ -53,21 +53,15 @@ module array_practice;
 
     // Exercise 6: Queue Operations
     begin
-       int data_queue [$] = '{1, 2, 3};
+      automatic int data_queue [$] = '{1, 2, 3};
       $display("Initial queue: %p", data_queue);
 
-      begin
-         int reversed_q [$];
-        foreach (data_queue[i]) reversed_q.push_front(data_queue[i]);
-        data_queue = reversed_q;
-      end
+      // 1. In-place reverse (supported in Vivado 2026)
+      data_queue.reverse();
       $display("Queue after reverse: %p", data_queue);
 
-      begin
-        int popped_val;
-        popped_val = data_queue.pop_front();
-        $display("Popped front element: %0d", popped_val);
-      end
+      // 2. Pop front directly (discard return value with void'())
+      void'(data_queue.pop_front());
       $display("Queue after .pop_front(): %p", data_queue);
     end
 

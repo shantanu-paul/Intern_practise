@@ -1,5 +1,5 @@
 # Parameterized CDC Asynchronous FIFO Verification Plan
-## Testplan & Verification Specification Proposal
+**Verification Plan & Test Specification Proposal**
 
 **Author:** Shantanu Paul  
 **Target DUT:** `cdc_fifo_top`  

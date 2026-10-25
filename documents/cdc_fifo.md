@@ -1,5 +1,5 @@
 # Parameterized Clock Domain Crossing (CDC) Asynchronous FIFO
-## Architectural & Functional Specification Proposal
+**Architectural & Functional Specification Proposal**
 
 **Author:** Shantanu Paul  
 **Module Name:** `cdc_fifo_top`  
@@ -155,3 +155,31 @@ The top-level module `cdc_fifo_top` decomposes into five high-cohesion submodule
 2. **Zero-Cycle Read:** First-Word Fall-Through (FWFT) allows data to be read combinatorially as soon as `data_out_valid_o` is asserted.
 3. **Synchronizer Latency:** Transferred pointer updates become visible in the opposing domain after 2 to 3 clock cycles.
 4. **Hardware Backpressure:** The ready-valid protocol strictly guarantees zero data drop and zero duplicate reads.
+
+---
+
+## 9. Simulation & Build Guide
+
+The design is verified using the project's root `Makefile` with AMD Vivado `xsim` (compatible with both Linux and Windows environments).
+
+### Compilation & Simulation Commands
+
+To clean, compile all design sources, elaborate, and run the top-level testbench:
+
+```bash
+# Run default testbench with a clean build
+make all
+
+# Explicitly specify top-level testbench module
+make all TOP=cdc_fifo_linear_tb
+
+# Fast incremental run without cleaning
+make run TOP=cdc_fifo_linear_tb
+
+# Pass custom test name or repetition count
+make all TOP=cdc_fifo_linear_tb TN=default TR=1
+
+# Clean build artifacts and simulation logs
+make clean
+```
+

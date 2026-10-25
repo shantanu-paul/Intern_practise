@@ -339,3 +339,46 @@ Verification sign-off is achieved when:
     Final Status : ALL TESTS PASSED
    ==================================================
    ```
+
+---
+
+## 8. Simulation & Execution Guide
+
+### Command Reference
+
+The testbench suite is executed using the root `Makefile` supporting automated compilation, elaboration, and batch execution with AMD Vivado `xsim` (compatible with both Linux and Windows environments):
+
+```bash
+# Execute complete verification test suite (clean build + run)
+make all TOP=cdc_fifo_linear_tb
+
+# Fast incremental run without cleaning
+make run TOP=cdc_fifo_linear_tb
+
+# Run with custom test arguments or repetitions
+make all TOP=cdc_fifo_linear_tb TN=default TR=1
+
+# Clean all temporary simulation objects and logs
+make clean
+```
+
+### Expected Simulation Output Banner
+
+```text
+Running CDC FIFO Verification Steps (1 to 9):
+[STEP 1] Reset initialization ........................... PASS
+[STEP 2] Single write/read data integrity ............... PASS
+[STEP 3] FIFO full detection ............................ PASS
+[STEP 4] Overflow backpressure protection ............... PASS
+[STEP 5] FIFO empty detection and ordering .............. PASS
+[STEP 6] Underflow protection ........................... PASS
+[STEP 7] Clock ratio sweep (5:1 fast-write) ............. PASS
+[STEP 8] Clock ratio sweep (1:5 slow-write) ............. PASS
+[STEP 9] Concurrent read/write operation ................ PASS
+
+==================================================
+ CDC FIFO Verification Summary
+ Final Status : ALL TESTS PASSED
+==================================================
+```
+

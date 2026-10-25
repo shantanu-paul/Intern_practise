@@ -1,0 +1,34 @@
+# ==============================================================================
+# ADN Semiconductor — CDC FIFO Project .gitignore
+# ==============================================================================
+
+# Build & Simulation Directories
+build/
+log/
+xsim.dir/
+.Xil/
+
+# Vivado / XSIM Generated Files & Logs
+*.log
+*.jou
+*.pb
+*.wdb
+*.wcfg
+*.vcd
+*.fsdb
+*.vpd
+
+# Questa / ModelSim / VCS / Icarus Artifacts
+work/
+transcript
+*.wlf
+*.dump
+
+# Temporary & Editor Artifacts
+.vscode/
+*~
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

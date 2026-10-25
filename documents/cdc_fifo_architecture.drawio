@@ -1,0 +1,411 @@
+<mxfile host="65bd71144e" modified="2026-10-25T14:00:00.000Z" agent="VSCode" version="21.6.8" type="device">
+  <diagram id="cdc_fifo_arch_sir" name="CDC FIFO Architecture">
+    <mxGraphModel dx="1200" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="580" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- CDC Boundary -->
+        <mxCell id="cdc_boundary_line" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;strokeColor=#999999;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="550" as="sourcePoint" />
+            <mxPoint x="600" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="cdc_badge" value="&lt;b&gt;CDC BOUNDARY&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="540" y="2" width="120" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Write Domain Header -->
+        <mxCell id="hdr_write" value="&lt;b&gt;WRITE CLOCK DOMAIN (data_in_clk_i | data_in_arst_ni)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f5ff;strokeColor=#b0c8f0;fontColor=#003366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="22" width="450" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Read Domain Header -->
+        <mxCell id="hdr_read" value="&lt;b&gt;READ CLOCK DOMAIN (data_out_clk_i | data_out_arst_ni)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f5ff;strokeColor=#b0c8f0;fontColor=#003366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="22" width="450" height="26" as="geometry" />
+        </mxCell>
+    
+
+        <!-- Write Occupancy Count Box -->
+        <mxCell id="box_count_wr" value="&lt;b&gt;&lt;font color=&quot;#0055bb&quot;&gt;Write Occupancy Count&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot; color=&quot;#333333&quot;&gt;data_in_count_o = wr - rd_sync&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5faff;strokeColor=#007fff;strokeWidth=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="175" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Read Occupancy Count Box -->
+        <mxCell id="box_count_rd" value="&lt;b&gt;&lt;font color=&quot;#0055bb&quot;&gt;Read Occupancy Count&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;&quot; color=&quot;#333333&quot;&gt;data_out_count_o = wr_sync - rd&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5faff;strokeColor=#007fff;strokeWidth=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="965" y="480" width="175" height="30" as="geometry" />
+        </mxCell>
+    
+
+        <!-- Dual-Port Memory -->
+        <mxCell id="u_mem" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Dual-Port Storage Array (cdc_fifo_mem)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size: 11.5px;&quot;&gt;Depth: 2^FIFO_SIZE Words × DATA_WIDTH Bits | First-Word Fall-Through (FWFT)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#000000;strokeWidth=1.8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="250" y="240" width="700" height="84" as="geometry" />
+        </mxCell>
+
+        <!-- Port Labels inside Memory -->
+        <mxCell id="lbl_wr_addr" value="Write Address" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="258" y="248" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_wr_data" value="Write Data" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="258" y="273" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_wr_en" value="Write Enable (in_hs)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="258" y="298" width="120" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lbl_rd_addr" value="Read Address" style="text;html=1;align=right;verticalAlign=middle;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="850" y="248" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_rd_data" value="Read Data" style="text;html=1;align=right;verticalAlign=middle;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="850" y="273" width="90" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- External Data In Wire -->
+        <mxCell id="wire_data_in" value="&lt;b&gt;data_in_i&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="282" as="sourcePoint" />
+            <mxPoint x="250" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- External Data Out Wire -->
+        <mxCell id="wire_data_out" value="&lt;b&gt;data_out_o&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="282" as="sourcePoint" />
+            <mxPoint x="1150" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+
+        <!-- Full Logic Cloud -->
+        <mxCell id="cloud_full" value="&lt;b&gt;Full&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:9.5px;&quot;&gt;Logic&lt;/font&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="160" width="95" height="58" as="geometry" />
+        </mxCell>
+
+        <!-- data_in_ready_o Wire -->
+        <mxCell id="wire_ready_out" value="&lt;b&gt;data_in_ready_o&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;labelPosition=left;verticalLabelPosition=top;align=left;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="185" as="sourcePoint" />
+            <mxPoint x="15" y="185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- in_hs Wire Fork -->
+        <mxCell id="wire_in_hs" value="&lt;b&gt;in_hs&lt;/b&gt;" style="endArrow=none;html=1;strokeWidth=1.4;strokeColor=#000000;fontSize=10.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="185" as="sourcePoint" />
+            <mxPoint x="210" y="185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="wire_in_hs_mem" value="" style="endArrow=classic;html=1;strokeWidth=1.4;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="185" as="sourcePoint" />
+            <mxPoint x="250" y="307" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="307" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="wire_in_hs_reg" value="" style="endArrow=classic;html=1;strokeWidth=1.4;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="185" as="sourcePoint" />
+            <mxPoint x="420" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="185" />
+              <mxPoint x="390" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+    
+
+        <!-- Write Pointer Register -->
+        <mxCell id="wr_ptr_ic" value="&lt;b&gt;Write Pointer Reg&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:10px;&quot;&gt;(Gray Code Only)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry x="420" y="115" width="130" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- Gray to Binary Converter (Local Write Loop) -->
+        <mxCell id="g2b_wi" value="&lt;b&gt;Gray to Binary&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:9.5px;&quot;&gt;(On-the-Fly Decode)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="260" y="55" width="130" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- +1 Incrementer Box -->
+        <mxCell id="inc_wr" value="&lt;b&gt;+1&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="220" y="124" width="32" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Binary to Gray Converter (b2g_w) -->
+        <mxCell id="b2g_w" value="&lt;b&gt;Binary to Gray&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:9.5px;&quot;&gt;(Next Pointer)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="275" y="118" width="105" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- wr_ptr_gray wire exiting Write Pointer Reg -->
+        <mxCell id="wire_wr_ptr_gray" value="&lt;b&gt;&lt;font color=&quot;#0066cc&quot;&gt;wr_ptr_gray&lt;/font&gt;&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#0066cc;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="139" as="sourcePoint" />
+            <mxPoint x="650" y="139" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- wr_ptr_gray local feedback to g2b_wi -->
+        <mxCell id="wire_wr_gray_fb" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="575" y="139" as="sourcePoint" />
+            <mxPoint x="390" y="75" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="75" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- wr_addr wire exiting g2b_wi -->
+        <mxCell id="wire_wr_addr" value="&lt;b&gt;wr_addr&lt;/b&gt;" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="75" as="sourcePoint" />
+            <mxPoint x="180" y="75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- wr_addr branch 1: Down to Full Cloud -->
+        <mxCell id="wire_wr_addr_full" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="75" as="sourcePoint" />
+            <mxPoint x="110" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="75" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- wr_addr branch 2: Down to +1 adder -->
+        <mxCell id="wire_wr_addr_inc" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="75" as="sourcePoint" />
+            <mxPoint x="220" y="139" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="180" y="139" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- wr_addr branch 3: Down to Memory Write Address -->
+        <mxCell id="wire_wr_addr_mem" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="139" as="sourcePoint" />
+            <mxPoint x="250" y="257" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="180" y="257" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- +1 to b2g_w -->
+        <mxCell id="wire_inc_to_b2g" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="252" y="139" as="sourcePoint" />
+            <mxPoint x="275" y="139" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- b2g_w to Write Pointer Reg -->
+        <mxCell id="wire_b2g_to_reg" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="139" as="sourcePoint" />
+            <mxPoint x="420" y="139" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+
+        <!-- 2FF Synchronizer (Write to Read) -->
+        <mxCell id="u_sync_w2r" value="&lt;b&gt;2FF Synchronizer&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:10px;&quot;&gt;(data_out_clk_i)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="115" width="130" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- Gray to Binary (CDC Reconstruct, Write to Read) -->
+        <mxCell id="u_g2b_wr_sync" value="&lt;b&gt;Gray to Binary&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:10px;&quot;&gt;(CDC Reconstruct)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="820" y="115" width="130" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wire_sync_to_g2b_w" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="139" as="sourcePoint" />
+            <mxPoint x="820" y="139" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Output of CDC Gray to Binary: wr_addr_sync to Empty Logic -->
+        <mxCell id="wire_wr_addr_sync" value="&lt;b&gt;wr_addr_sync&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="139" as="sourcePoint" />
+            <mxPoint x="1085" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1020" y="139" />
+              <mxPoint x="1020" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+    
+
+        <!-- Empty Logic Cloud -->
+        <mxCell id="cloud_empty" value="&lt;b&gt;Empty&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:9.5px;&quot;&gt;Logic&lt;/font&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.4;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="360" width="95" height="58" as="geometry" />
+        </mxCell>
+
+        <!-- data_out_valid_o Wire -->
+        <mxCell id="wire_valid_out" value="&lt;b&gt;data_out_valid_o&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;labelPosition=right;verticalLabelPosition=top;align=right;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1135" y="385" as="sourcePoint" />
+            <mxPoint x="1180" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- out_hs Wire to Read Pointer Reg -->
+        <mxCell id="wire_out_hs" value="&lt;b&gt;out_hs&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=1.4;strokeColor=#000000;fontSize=10.5;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="385" as="sourcePoint" />
+            <mxPoint x="775" y="395" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="980" y="385" />
+              <mxPoint x="980" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+    
+
+        <!-- Read Pointer Register -->
+        <mxCell id="rd_ptr_oc" value="&lt;b&gt;Read Pointer Reg&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:10px;&quot;&gt;(Gray Code Only)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry x="645" y="380" width="130" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- Gray to Binary Converter (Local Read Loop) -->
+        <mxCell id="g2b_ro" value="&lt;b&gt;Gray to Binary&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:9.5px;&quot;&gt;(On-the-Fly Decode)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="810" y="468" width="130" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- +1 Incrementer Box (Read Domain) -->
+        <mxCell id="inc_rd" value="&lt;b&gt;+1&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="920" y="389" width="32" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Binary to Gray Converter (b2g_r) -->
+        <mxCell id="b2g_r" value="&lt;b&gt;Binary to Gray&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:9.5px;&quot;&gt;(Next Pointer)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="790" y="383" width="105" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- rd_ptr_gray wire exiting Read Pointer Reg -->
+        <mxCell id="wire_rd_ptr_gray" value="&lt;b&gt;&lt;font color=&quot;#0066cc&quot;&gt;rd_ptr_gray&lt;/font&gt;&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#0066cc;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="645" y="404" as="sourcePoint" />
+            <mxPoint x="550" y="404" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- rd_ptr_gray local feedback to g2b_ro -->
+        <mxCell id="wire_rd_gray_fb" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="625" y="404" as="sourcePoint" />
+            <mxPoint x="810" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="625" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- rd_addr wire exiting g2b_ro -->
+        <mxCell id="wire_rd_addr" value="&lt;b&gt;rd_addr&lt;/b&gt;" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="490" as="sourcePoint" />
+            <mxPoint x="1000" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- rd_addr branch 1: Up to Empty Cloud -->
+        <mxCell id="wire_rd_addr_empty" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="490" as="sourcePoint" />
+            <mxPoint x="1085" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1085" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- rd_addr branch 2: Up to +1 adder -->
+        <mxCell id="wire_rd_addr_inc" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="490" as="sourcePoint" />
+            <mxPoint x="952" y="404" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1000" y="404" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- rd_addr branch 3: Up to Memory Read Address -->
+        <mxCell id="wire_rd_addr_mem" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="404" as="sourcePoint" />
+            <mxPoint x="950" y="257" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1000" y="257" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- +1 to b2g_r -->
+        <mxCell id="wire_inc_to_b2g_r" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="404" as="sourcePoint" />
+            <mxPoint x="895" y="404" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- b2g_r to Read Pointer Reg -->
+        <mxCell id="wire_b2g_to_reg_r" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="404" as="sourcePoint" />
+            <mxPoint x="775" y="404" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+
+        <!-- 2FF Synchronizer (Read to Write) -->
+        <mxCell id="u_sync_r2w" value="&lt;b&gt;2FF Synchronizer&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:10px;&quot;&gt;(data_in_clk_i)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry x="420" y="380" width="130" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- Gray to Binary (CDC Reconstruct, Read to Write) -->
+        <mxCell id="u_g2b_rd_sync" value="&lt;b&gt;Gray to Binary&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot; style=&quot;font-size:10px;&quot;&gt;(CDC Reconstruct)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="250" y="380" width="130" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="wire_sync_to_g2b_r" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="404" as="sourcePoint" />
+            <mxPoint x="380" y="404" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Output of CDC Gray to Binary: rd_addr_sync to Full Logic -->
+        <mxCell id="wire_rd_addr_sync" value="&lt;b&gt;rd_addr_sync&lt;/b&gt;" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="404" as="sourcePoint" />
+            <mxPoint x="110" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="404" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Reset Annotation Footer -->
+        <mxCell id="lbl_resets" value="Independent Active-Low Resets: data_in_arst_ni resets write domain | data_out_arst_ni resets read domain" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="300" y="555" width="600" height="20" as="geometry" />
+        </mxCell>
+    
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

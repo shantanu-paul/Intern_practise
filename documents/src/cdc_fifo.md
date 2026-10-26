@@ -25,11 +25,16 @@ Pointers are stored exclusively in Gray code to minimize register overhead, whil
 ```
 CDC_FIFO/
 ├── documents/
-│   ├── cdc_fifo.md               # Master design specification proposal
-│   ├── cdc_fifo_tb.md            # Test plan & verification document
-│   ├── cdc_fifo_pinout.svg       # Top-level pinout diagram
-│   ├── cdc_fifo_architecture.svg # Architecture block diagram
-│   └── cdc_fifo_testbench.svg    # Testbench architecture diagram
+│   ├── src/
+│   │   ├── cdc_fifo.md               # Master design specification proposal
+│   │   ├── cdc_fifo_pinout.svg       # Top-level pinout diagram
+│   │   ├── cdc_fifo_pinout.drawio    # Pinout diagram (editable source)
+│   │   ├── cdc_fifo_architecture.svg # Architecture block diagram
+│   │   └── cdc_fifo_architecture.drawio # Architecture diagram (editable source)
+│   └── tb/
+│       ├── cdc_fifo_tb.md            # Test plan & verification document
+│       ├── cdc_fifo_testbench.svg    # Testbench architecture diagram
+│       └── cdc_fifo_testbench.drawio # Testbench topology (editable source)
 ├── interface/
 │   └── cdc_fifo_if.sv            # Dual-clock, dual-reset SystemVerilog interface
 ├── source/
@@ -40,7 +45,7 @@ CDC_FIFO/
 │   ├── cdc_fifo_mem.sv           # Dual-port storage array
 │   └── fifo_reg.sv               # Enabled register with asynchronous reset
 ├── testbench/
-│   └── cdc_fifo_linear_tb.sv     # 9-step linear self-checking testbench
+│   └── cdc_fifo_linear_tb.sv     # 9-step linear self-checking testbench (local)
 └── Makefile                      # Vivado xsim automation Makefile
 ```
 

@@ -32,3 +32,6 @@ transcript
 *.swo
 .DS_Store
 Thumbs.db
+
+# Testbench (Local Verification Only)
+testbench/

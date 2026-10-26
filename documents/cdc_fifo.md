@@ -51,9 +51,9 @@ CDC_FIFO/
 | Parameter | Type | Default / Scope | Description |
 | :--- | :---: | :---: | :--- |
 | `DATA_WIDTH` | `int` | Top Instantiation (`4`) | Width of each data word in bits. Scalable to 8, 16, 32, 64, etc. |
-| `FIFO_SIZE` | `int` | Top Instantiation (`2`) | Log2 of FIFO buffer depth ($DEPTH = 2^{FIFO\_SIZE} = 4$ words). |
+| `FIFO_SIZE` | `int` | Top Instantiation (`2`) | Log2 of FIFO buffer depth (`DEPTH = 2^FIFO_SIZE = 4` words). |
 | `SYNC_STAGES` | `int` | Top Instantiation (`2`) | Number of flip-flop synchronizer stages to resolve metastability. |
-| `PTR_WIDTH` | `int` | `FIFO_SIZE + 1` | Pointer width accommodating the wrap-around bit ($PTR\_WIDTH = 3$). |
+| `PTR_WIDTH` | `int` | `FIFO_SIZE + 1` | Pointer width accommodating the wrap-around bit (`PTR_WIDTH = 3`). |
 
 > **Design Principle — Generic Reusable RTL:**  
 > All submodules and `cdc_fifo_top` declare parameters without hardcoded default values (`parameter int`). Numerical dimensions are specified strictly at the top-level testbench instantiation, ensuring 100% parameterization.
@@ -75,13 +75,13 @@ CDC_FIFO/
 | `data_in_i` | Input | `DATA_WIDTH` | Write | **Write Data:** Input payload to be written into the FIFO. |
 | `data_in_valid_i` | Input | `1` | Write | **Write Valid:** Producer indicates `data_in_i` is valid for transfer. |
 | `data_in_ready_o` | Output | `1` | Write | **Write Ready (!full):** Asserted when FIFO has space and write reset is released. Transaction commits when `valid_i && ready_o`. |
-| `data_in_count_o` | Output | `FIFO_SIZE+1` | Write | **Write Domain Occupancy:** Stored element count visible in write domain ($wr\_ptr\_bin - rd\_ptr\_bin\_sync$). |
+| `data_in_count_o` | Output | `FIFO_SIZE+1` | Write | **Write Domain Occupancy:** Stored element count visible in write domain (`wr_ptr_bin - rd_ptr_bin_sync`). |
 | `data_out_clk_i` | Input | `1` | Read | **Read Clock:** Timing reference for read-side logic and read pointer. |
 | `data_out_arst_ni` | Input | `1` | Read | **Read Reset:** Independent active-low asynchronous reset for read domain. |
 | `data_out_o` | Output | `DATA_WIDTH` | Read | **Read Data:** Output payload presenting the oldest unread word (FWFT). |
 | `data_out_valid_o` | Output | `1` | Read | **Read Valid (!empty):** Asserted when readable data is available and read reset is released. Transaction commits when `valid_o && ready_i`. |
 | `data_out_ready_i` | Input | `1` | Read | **Read Ready:** Consumer indicates ready to absorb data from `data_out_o`. |
-| `data_out_count_o` | Output | `FIFO_SIZE+1` | Read | **Read Domain Occupancy:** Stored element count visible in read domain ($wr\_ptr\_bin\_sync - rd\_ptr\_bin$). |
+| `data_out_count_o` | Output | `FIFO_SIZE+1` | Read | **Read Domain Occupancy:** Stored element count visible in read domain (`wr_ptr_bin_sync - rd_ptr_bin`). |
 
 ---
 
@@ -114,9 +114,9 @@ The top-level module `cdc_fifo_top` decomposes into five high-cohesion submodule
 
 ![CDC FIFO Architecture Block Diagram](cdc_fifo_architecture.svg)
 
-1. **`cdc_fifo_mem` (Storage Array):** Dual-port RAM ($2^{FIFO\_SIZE} \times DATA\_WIDTH$). Synchronous write on `data_in_clk_i` (`valid_i & ready_o`), zero-cycle combinational First-Word Fall-Through (FWFT) read on `data_out_clk_i`.
+1. **`cdc_fifo_mem` (Storage Array):** Dual-port RAM (`DEPTH = 2^FIFO_SIZE`, width `DATA_WIDTH`). Synchronous write on `data_in_clk_i` (`valid_i & ready_o`), zero-cycle combinational First-Word Fall-Through (FWFT) read on `data_out_clk_i`.
 2. **`cdc_2ff_sync` (Pointer Synchronizers):** 2-stage flip-flop synchronizers resolving metastability on cross-domain Gray pointers.
-3. **`cdc_bin2gray` (Binary to Gray Converters):** Combinational converters ($Gray = (Bin \gg 1) \oplus Bin$) encoding next pointers to Gray code before registering.
+3. **`cdc_bin2gray` (Binary to Gray Converters):** Combinational converters (`gray = (bin >> 1) ^ bin`) encoding next pointers to Gray code before registering.
 4. **`cdc_gray2bin` (Gray to Binary Converters):** Four combinational converters decoding Gray pointers back to binary on-the-fly (two for local RAM addressing/incrementation, two for cross-domain flag evaluation).
 5. **`fifo_reg` (Pointer Registers):** Clock-enabled D-flip-flop registers with asynchronous reset storing exclusively the Gray code pointers.
 
@@ -133,19 +133,32 @@ The top-level module `cdc_fifo_top` decomposes into five high-cohesion submodule
 ## 7. Full / Empty & Occupancy Logic
 
 - **Full Condition (Write Domain):**  
-  Buffer is full when wrap MSBs differ and physical address LSBs match:
-  $$\text{Full} = \big(wr\_ptr\_bin[MSB] \neq rd\_ptr\_bin\_sync[MSB]\big) \;\land\; \big(wr\_ptr\_bin[MSB-1:0] == rd\_ptr\_bin\_sync[MSB-1:0]\big)$$
-  $$\text{data\_in\_ready\_o} = data\_in\_arst\_ni \;\land\; \overline{\text{Full}}$$
+  Buffer is full when pointer wrap MSBs differ and physical address LSBs match:
+  ```systemverilog
+  // FIFO Full occurs when wrap MSBs differ and lower address bits match
+  fifo_full       = (wr_ptr_bin[PTR_WIDTH-1] != rd_ptr_bin_sync[PTR_WIDTH-1]) &&
+                    (wr_ptr_bin[PTR_WIDTH-2:0] == rd_ptr_bin_sync[PTR_WIDTH-2:0]);
+
+  // Output ready flag is active only when write reset is deasserted and buffer is not full
+  data_in_ready_o = data_in_arst_ni && !fifo_full;
+  ```
 
 - **Empty Condition (Read Domain):**  
   Buffer is empty when write and read pointers are identical:
-  $$\text{Empty} = \big(wr\_ptr\_bin\_sync == rd\_ptr\_bin\big)$$
-  $$\text{data\_out\_valid\_o} = data\_out\_arst\_ni \;\land\; \overline{\text{Empty}}$$
+  ```systemverilog
+  // FIFO Empty occurs when synchronized write pointer equals read pointer
+  fifo_empty       = (wr_ptr_bin_sync == rd_ptr_bin);
+
+  // Output valid flag is active only when read reset is deasserted and buffer is not empty
+  data_out_valid_o = data_out_arst_ni && !fifo_empty;
+  ```
 
 - **Occupancy Counting:**  
-  Exact word count is obtained via binary subtraction over $(FIFO\_SIZE + 1)$ bits:
-  $$\text{data\_in\_count\_o} = wr\_ptr\_bin - rd\_ptr\_bin\_sync \quad (\text{Write Domain})$$
-  $$\text{data\_out\_count\_o} = wr\_ptr\_bin\_sync - rd\_ptr\_bin \quad (\text{Read Domain})$$
+  Exact word count is computed via binary subtraction over `(FIFO_SIZE + 1)` bits:
+  ```systemverilog
+  data_in_count_o  = wr_ptr_bin - rd_ptr_bin_sync;  // Write Domain Occupancy
+  data_out_count_o = wr_ptr_bin_sync - rd_ptr_bin;  // Read Domain Occupancy
+  ```
 
 ---
 

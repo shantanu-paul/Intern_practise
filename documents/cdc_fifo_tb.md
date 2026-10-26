@@ -83,9 +83,9 @@ module cdc_fifo_top #(
 | Parameter | Type | Default Under Test | Description |
 | :--- | :---: | :---: | :--- |
 | `DATA_WIDTH` | `int` | `4` | Bit width of data words |
-| `FIFO_SIZE` | `int` | `2` | Log2 of FIFO depth ($DEPTH = 2^{FIFO\_SIZE} = 4$ words) |
+| `FIFO_SIZE` | `int` | `2` | Log2 of FIFO depth (`DEPTH = 2^FIFO_SIZE = 4` words) |
 | `SYNC_STAGES` | `int` | `2` | Number of cascaded synchronizer flip-flop stages |
-| `PTR_WIDTH` | `int` | `3` | Pointer width including wrap-around MSB ($PTR\_WIDTH = FIFO\_SIZE + 1$) |
+| `PTR_WIDTH` | `int` | `3` | Pointer width including wrap-around MSB (`PTR_WIDTH = FIFO_SIZE + 1 = 3`) |
 
 #### Assumptions
 1. Write clock `data_in_clk_i` and read clock `data_out_clk_i` are completely asynchronous with arbitrary frequencies and phases.
@@ -104,8 +104,8 @@ The `cdc_fifo_top` module implements an asynchronous dual-clock FIFO buffer. Poi
 - **Read Path:** A read transaction commits on `data_out_clk_i` posedge when both `data_out_valid_o` and `data_out_ready_i` are high (`out_hs`). The dual-port RAM read is combinational (First-Word Fall-Through), presenting unread data immediately at `data_out_o`.
 
 ### Protection Policy
-- **Backpressure Protection:** When the FIFO reaches depth $DEPTH=4$, `data_in_ready_o` deasserts to prevent buffer overwrite.
-- **Underflow Protection:** When the FIFO is empty ($DEPTH=0$), `data_out_valid_o` deasserts to prevent invalid reads.
+- **Backpressure Protection:** When the FIFO reaches full depth (`DEPTH = 4`), `data_in_ready_o` deasserts to prevent buffer overwrite.
+- **Underflow Protection:** When the FIFO is empty (`count == 0`), `data_out_valid_o` deasserts to prevent invalid reads.
 - **Reset Isolation:** When `data_in_arst_ni = 0`, `data_in_ready_o` immediately forces to `0`. When `data_out_arst_ni = 0`, `data_out_valid_o` immediately forces to `0`.
 
 ### Key Functional Capabilities
@@ -176,7 +176,7 @@ Verify end-to-end data transfer of a single word through the FIFO, including cro
 #### Description
 1. Generate random payload word `rand_word`.
 2. Call `write_word(rand_word)` on the write clock domain.
-3. Wait for synchronization latency: $(SYNC\_STAGES + 2)$ read clock cycles.
+3. Wait for synchronization latency: `(SYNC_STAGES + 2)` read clock cycles.
 4. Call `read_word(rdata)` on the read clock domain.
 
 #### Expectation
@@ -189,7 +189,7 @@ Verify end-to-end data transfer of a single word through the FIFO, including cro
 <TODO Shantanu Paul>
 
 #### Goal
-Verify that writing $DEPTH = 4$ words fills the FIFO buffer and deasserts `data_in_ready_o`.
+Verify that writing 4 words (`DEPTH = 4`) fills the FIFO buffer and deasserts `data_in_ready_o`.
 
 #### Description
 1. Consecutively write 4 unique random words into the FIFO.

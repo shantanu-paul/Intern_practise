@@ -1,0 +1,86 @@
+<svg content="&lt;mxfile&gt;&lt;diagram id=&quot;cdc_fifo_tb_env&quot; name=&quot;CDC FIFO Test Environment&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1120px" height="420px" viewBox="-0.5 -0.5 1120 420">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1120" height="420" fill="#FFFFFF"/>
+
+  <!-- ==================== BOX 1: TESTBENCH ==================== -->
+  <rect x="30" y="30" width="230" height="360" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="145" y="65" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">cdc_fifo_linear_tb</text>
+  <text x="145" y="85" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="middle">(Linear Stimulus)</text>
+  <line x1="30" y1="100" x2="260" y2="100" stroke="#000000" stroke-width="1"/>
+  
+  <text x="42" y="125" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">1: Dual Reset Initialization</text>
+  <text x="42" y="152" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">2: Single W/R Handshake</text>
+  <text x="42" y="179" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">3: FIFO Full Detection</text>
+  <text x="42" y="206" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">4: Overflow Protection</text>
+  <text x="42" y="233" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">5: Empty Detection &amp; Ordering</text>
+  <text x="42" y="260" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">6: Underflow Protection</text>
+  <text x="42" y="287" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">7: Sweep Fast-to-Slow (5:1)</text>
+  <text x="42" y="314" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">8: Sweep Slow-to-Fast (1:5)</text>
+  <text x="42" y="341" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">9: Concurrent Read/Write</text>
+
+  <!-- ==================== BOX 2: DUT ==================== -->
+  <rect x="440" y="30" width="240" height="360" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="560" y="65" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">DEVICE UNDER TEST</text>
+  <text x="560" y="85" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="middle">(cdc_fifo_top)</text>
+  <line x1="440" y1="100" x2="680" y2="100" stroke="#000000" stroke-width="1"/>
+  
+  <text x="455" y="130" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000">&#8226; cdc_fifo_mem (Storage)</text>
+  <text x="455" y="165" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000">&#8226; cdc_2ff_sync (w2r, r2w)</text>
+  <text x="455" y="200" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000">&#8226; cdc_bin2gray (2 converters)</text>
+  <text x="455" y="235" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000">&#8226; cdc_gray2bin (4 converters)</text>
+  <text x="455" y="270" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000">&#8226; Single Gray Pointer Regs</text>
+  <text x="455" y="305" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000">&#8226; Dual Resets (in/out arst)</text>
+  <text x="455" y="340" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000">&#8226; 4 SVA Concurrent Asserts</text>
+
+  <!-- ==================== BOX 3: CHECKER ==================== -->
+  <rect x="860" y="30" width="230" height="360" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="975" y="65" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">ASSERTION CHECKER</text>
+  <text x="975" y="85" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="middle">(Immediate &amp; SVA)</text>
+  <line x1="860" y1="100" x2="1090" y2="100" stroke="#000000" stroke-width="1"/>
+
+  <text x="872" y="130" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">&#8226; Reset Zero Count Check</text>
+  <text x="872" y="165" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">&#8226; Exact Data Word Matching</text>
+  <text x="872" y="200" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">&#8226; Full Ready De-assertion</text>
+  <text x="872" y="235" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">&#8226; Empty Valid De-assertion</text>
+  <text x="872" y="270" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">&#8226; Zero Drop Stability SVA</text>
+  <text x="872" y="305" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">&#8226; Protocol Handshake SVA</text>
+  <text x="872" y="340" font-family="'Courier New', Courier, monospace" font-size="10.5" fill="#000000">&#8226; Clean 9/9 Pass Log Banner</text>
+
+  <!-- ==================== INTERCONNECT ARROWS ==================== -->
+  <!-- TB to DUT: Write Domain Signals -->
+  <line x1="260" y1="130" x2="438" y2="130" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="350" y="122" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">data_in_clk, arst_ni</text>
+
+  <line x1="260" y1="165" x2="438" y2="165" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="350" y="157" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">data_in_i, valid_i</text>
+
+  <line x1="440" y1="200" x2="262" y2="200" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="350" y="192" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">data_in_ready_o, count</text>
+
+  <!-- TB to DUT: Read Domain Signals -->
+  <line x1="260" y1="270" x2="438" y2="270" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="350" y="262" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">data_out_clk, arst_ni</text>
+
+  <line x1="260" y1="305" x2="438" y2="305" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="350" y="297" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">data_out_ready_i</text>
+
+  <line x1="440" y1="340" x2="262" y2="340" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="350" y="332" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">data_out_valid_o, o, cnt</text>
+
+  <!-- DUT to CHECKER -->
+  <line x1="680" y1="165" x2="858" y2="165" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="770" y="157" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">data_in_ready, count</text>
+
+  <line x1="680" y1="270" x2="858" y2="270" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="770" y="262" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">data_out_valid, data_o</text>
+
+  <line x1="680" y1="340" x2="858" y2="340" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="770" y="332" font-family="'Courier New', Courier, monospace" font-size="11" fill="#000000" text-anchor="middle">SVA Assert Status</text>
+
+</svg>

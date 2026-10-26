@@ -1,0 +1,79 @@
+<svg content="&lt;mxfile&gt;&lt;diagram id=&quot;cdc_fifo_pinout&quot; name=&quot;CDC FIFO Pinout&quot;&gt;7Vtdk6I4FP01Ps4WJELrI37t9sN81PRUTdW+WFmImppIXIij7q/fIAElQVuZADrqS8MNudF7cm5uDukOHC63f0ZotfjIAkw7wAq2HTjqAGDbliX+JJZdanEdaZhHJJAPHQxv5D8sjdljaxLguPAgZ4xysioafRaG2OcFG4oitik+NmO0OOoKzbFmePMR1a3fScAXqbXftQ72vzCZL+TIXVc2LFH2rDTECxSwzZEJjjtwGDHG06vldohpErssLGm/yYnW/HtFOOSXdABph5+IruVPkwYccbw96VSaYr7LIhKxdRjgxKvVgYPNgnD8tkJ+0roRc0DYFnxJxZ0tLmeE0iGjLNr3hZP9R9hjHrEfOGsJWSi6D/KoiNmE2RLzaCeG3hbCuCvcbUogWZTBgeQ0mOd+D6ESFzJa5ZGDrUSuGCERO2v/yVuy2QjORPlsQKFdDGlXjykEJTGFPQMx7ZbE1KVihME/4mKeXPiBP52RGZtytsoahdu8vSII4ml+LtJyLh6HVJoQJfNQ3PrCOxb2QTI2EanCkw1LEgTJMKXQFsGfsZBP0JLQJPhDto6I8AisT3gjG2UmtPvyvmwiXAWv41wIrwF0nROMwYGWbM9BhcPAS1L4AYIAxYt9DO0ihIn9C+IClgQHV7jpXkEh+w/nZDQjTBEnP4tfuyw2susXRsQPOomCFt5YYO9j2es4fSuOXPiOI46iOeaaoz1U+e+5CD33fW5+//r6bSyeGX3+6L1+Kmen7BKplmQ2F3B2/12zrOFDvJ/3nnjABqtt2k22Hxz1AsTRlIRTn/6Ykk4yjSdJjSGtKIr5NBT2/tE3S4d9pNQBTaUO27owd3QN5I6X92ff17E3anvysTUvm32J+Tn9zE4/0Gtw+vW06afkmpagi9Kf2QhyoCpybhE4V8fNzrA0XXL0jZccPkVxTPxqVXlaUghvE0KzvrUUGHldJ2OuFueX1hcq6VQ/5sqLbKBzGV5byW+o/G+diY7jeVcyMZdhmqCibbfGRRmaG+GibTtmyKg5MshGXRfKyCdMJHguedcRDTa45tmnlKlHW/Rsx9CqpzkySDRd8sqIRjrOYOR98z6IgHlWxxk9KXcN5V6aXNvMS1u/RDnQEuF6plY21ZFBwpXpWEZUyMqpsR5sXnpKSCsmw3yfnTnq15cMy1SeR1i5VBnXBhXBclWwVEcGwTqtiUQYBbspa229onh2+8tVX0GqRE3N1ybj69WN6SINrVcazdT3wJVppjoyRzNQpov8huuVqxXvFWsJ1wUKNrXVEkCXNHJZWKQTLlKgM5i8Tj5P317/Hrddxd9lVuw2mBUzZqlwHr3UeW7ALt6AlR0tqG0DdvI0zu9eOapbMPBiSPPQHBlMmxcc89Ffmz61/l/S+kG/QT2khqM+96n1Q8uQIqI5MkhHXRHJ2Zfu5J4L3zVMg6DJhe9RJRONaeoxj8pMUx0ZZJoumTwGWNoxxapipLrxrvFAQsnZkTwtpu9AnwLXNVu5snM/tW3loHnV5B4FLmhKR9YcmeMZNH8u5C4ELlj1GIgqcOX1Rg3YnFFE2M28nr7HbAiblPvhjakjbWVDU3K/5sgg48q0kUfIhqbkflif3A91VeOgDz/1fiNpsUa9X9we/q82hf/wz8lw/D8=&lt;/diagram&gt;&lt;/mxfile&gt;" xmlns="http://www.w3.org/2000/svg" version="1.1" width="940px" height="460px" viewBox="-0.5 -0.5 940 460">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="940" height="460" fill="#FFFFFF"/>
+
+  <!-- Module Center Box -->
+  <rect x="310" y="40" width="320" height="380" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="470" y="72" font-family="'Courier New', Courier, monospace" font-size="19" font-weight="bold" fill="#000000" text-anchor="middle">cdc_fifo_top</text>
+
+  <!-- Domain Divider -->
+  <line x1="310" y1="230" x2="630" y2="230" stroke="#000000" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Domain Titles inside Module -->
+  <text x="470" y="115" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">WRITE DOMAIN</text>
+  <text x="470" y="135" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="middle">(data_in_clk_i / data_in_arst_ni)</text>
+
+  <text x="470" y="295" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">READ DOMAIN</text>
+  <text x="470" y="315" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="middle">(data_out_clk_i / data_out_arst_ni)</text>
+
+  <!-- ==================== WRITE DOMAIN (Upper Half) ==================== -->
+  <!-- data_in_clk_i -->
+  <text x="245" y="80" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="end" dominant-baseline="middle">data_in_clk_i</text>
+  <line x1="255" y1="80" x2="308" y2="80" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- data_in_arst_ni (Independent Write Domain Reset) -->
+  <text x="245" y="115" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="bold" fill="#0055aa" text-anchor="end" dominant-baseline="middle">data_in_arst_ni</text>
+  <line x1="255" y1="115" x2="308" y2="115" stroke="#0055aa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- data_in_valid_i -->
+  <text x="245" y="150" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="end" dominant-baseline="middle">data_in_valid_i</text>
+  <line x1="255" y1="150" x2="308" y2="150" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- data_in_i[DATA_WIDTH-1:0] -->
+  <text x="245" y="185" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="end" dominant-baseline="middle">data_in_i[DATA-1:0]</text>
+  <line x1="255" y1="185" x2="308" y2="185" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="278" y1="180" x2="285" y2="190" stroke="#000000" stroke-width="1.5"/>
+
+  <!-- data_in_ready_o -->
+  <line x1="632" y1="120" x2="682" y2="120" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="695" y="120" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="middle">data_in_ready_o</text>
+
+  <!-- data_in_count_o[FIFO_SIZE:0] -->
+  <line x1="632" y1="160" x2="682" y2="160" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="655" y1="155" x2="662" y2="165" stroke="#000000" stroke-width="1.5"/>
+  <text x="695" y="160" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="middle">data_in_count_o[FIFO_SIZE:0]</text>
+
+  <!-- ==================== READ DOMAIN (Lower Half) ==================== -->
+  <!-- data_out_clk_i -->
+  <text x="245" y="270" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="end" dominant-baseline="middle">data_out_clk_i</text>
+  <line x1="255" y1="270" x2="308" y2="270" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- data_out_arst_ni (Independent Read Domain Reset) -->
+  <text x="245" y="305" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="bold" fill="#0055aa" text-anchor="end" dominant-baseline="middle">data_out_arst_ni</text>
+  <line x1="255" y1="305" x2="308" y2="305" stroke="#0055aa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- data_out_ready_i -->
+  <text x="245" y="340" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="end" dominant-baseline="middle">data_out_ready_i</text>
+  <line x1="255" y1="340" x2="308" y2="340" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- data_out_valid_o -->
+  <line x1="632" y1="280" x2="682" y2="280" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="695" y="280" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="middle">data_out_valid_o</text>
+
+  <!-- data_out_o[DATA_WIDTH-1:0] -->
+  <line x1="632" y1="320" x2="682" y2="320" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="655" y1="315" x2="662" y2="325" stroke="#000000" stroke-width="1.5"/>
+  <text x="695" y="320" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="middle">data_out_o[DATA-1:0]</text>
+
+  <!-- data_out_count_o[FIFO_SIZE:0] -->
+  <line x1="632" y1="360" x2="682" y2="360" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="655" y1="355" x2="662" y2="365" stroke="#000000" stroke-width="1.5"/>
+  <text x="695" y="360" font-family="'Courier New', Courier, monospace" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="middle">data_out_count_o[FIFO_SIZE:0]</text>
+
+</svg>

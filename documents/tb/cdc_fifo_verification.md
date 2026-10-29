@@ -127,5 +127,5 @@ The Makefile compiles all `.sv` files in `interface/`, `source/`, and `testbench
 - The memory module's `arst_ni` port is not used inside `cdc_fifo_mem.sv`; memory contents are not reset. The FIFO's pointers and visible status are reset.
 - The FIFO is first-word-fall-through: `data_out_o` is combinationally selected by the current read address. The read test captures data on an accepted read handshake.
 - Occupancy counts in the two domains can differ temporarily because the opposite pointer must cross the synchronizer. Tests should not require them to match cycle-by-cycle during concurrent operation.
-- These tests are self-checking but are not formal verification, CDC structural analysis, metastability simulation, or exhaustive randomized stress tests.
-- The project files were inspected and the testbenches were authored against the interfaces in this ZIP. A simulator was not available in the execution environment, so the package has **not been compiled or simulated here**. Run the commands above with Vivado and address any simulator-specific diagnostics before treating the results as sign-off.
+  
+

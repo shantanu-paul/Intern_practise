@@ -116,9 +116,9 @@ This FIFO is designed to transfer and buffer data between two independent clock 
 
 A write is accepted only when wr_en is asserted and full is deasserted at the active write-clock edge. If a write is attempted while the FIFO is full, the write is rejected and overflow is asserted. The producer must retain and retry any rejected data that must be preserved.
 
-The FIFO supports applications where the producer can respect backpressure. It does not guarantee acceptance of an entire non-pausable DMA burst. Such applications require additional system-level burst admission control, buffering, or capacity management.
+`The FIFO supports applications where the producer can respect backpressure. It does not guarantee acceptance of an entire non-pausable DMA burst. Such applications require additional system-level burst admission control, buffering, or capacity management.`
 
-The absence of an occupancy counter is therefore not, by itself, a design fault. Suitability for a particular application depends on the producer protocol and system requirements.
+`The absence of an occupancy counter` is therefore not, by itself, a design fault. Suitability for a particular application depends on the producer protocol and system requirements.
 
 
 

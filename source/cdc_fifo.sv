@@ -37,13 +37,13 @@ module cdc_fifo #(
 
   logic [DATA_WIDTH-1:0] mem [0:DEPTH-1];
 
-  logic [PTR_W-1:0] wbin, wgray, rbin, rgray;
+  logic [PTR_W-1:0] wbin, wgray, rbin, rgray; // PTR_W is Bit with each pointer and wbin/rbin = write/read in binary and wgray/rgray = write/read in gray
   logic [PTR_W-1:0] wbin_next, wgray_next, rbin_next, rgray_next;
   logic full_next, empty_next;
   logic wr_fire, rd_fire;
 
-  (* ASYNC_REG = "TRUE" *) logic [PTR_W-1:0] rgray_sync1, rgray_sync2;
-  (* ASYNC_REG = "TRUE" *) logic [PTR_W-1:0] wgray_sync1, wgray_sync2;
+  (* ASYNC_REG = "TRUE" *) logic [PTR_W-1:0] rgray_sync1, rgray_sync2; //ASYNC_REG is a synthesis and implementation attribute that identifies registers belonging to an asynchronous clock-domain synchronizer
+  (* ASYNC_REG = "TRUE" *) logic [PTR_W-1:0] wgray_sync1, wgray_sync2; //ASYNC_REG is a synthesis and implementation attribute that identifies registers belonging to an asynchronous clock-domain synchronizer
 
   function automatic logic [PTR_W-1:0] bin_to_gray(input logic [PTR_W-1:0] bin);
     bin_to_gray = (bin >> 1) ^ bin;

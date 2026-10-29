@@ -1,4 +1,8 @@
 # CDC FIFO Verification Plan
+Author: Syeda Nura Nabiah
+Designer: Shantanu Paul
+
+
 
 ## Scope
 

@@ -1,5 +1,6 @@
 // Asynchronous FIFO control with Gray-coded pointers.
-// NOTE: mem[] is a behavioral placeholder, NOT a SRAM inference.
+// NOTE: mem[] is a behavioral placeholder, NOT a guaranteed SRAM inference.
+// Replace the memory block with the project's actual SRAM macro wrapper.
 
 module cdc_fifo #(
   parameter int unsigned DATA_WIDTH = 32,

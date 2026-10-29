@@ -1,273 +1,150 @@
-<mxfile host="65bd71144e">
-    <diagram id="cdc-fifo-detailed" name="CDC FIFO Detailed Connections">
-        <mxGraphModel dx="1793" dy="1412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1220" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#173b63;fontSize=28;fontStyle=1;align=center;verticalAlign=middle;whiteSpace=wrap;" value="CDC FIFO — RTL ALIGNED MICROARCHITECHTURE" vertex="1">
-                    <mxGeometry height="45" width="1200" x="300" y="15" as="geometry"/>
-                </mxCell>
-                <mxCell id="subtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#203b5b;fontSize=16;fontStyle=0;align=center;verticalAlign=middle;whiteSpace=wrap;" value="Exact RTL signal names • DATA_WIDTH=32 • ADDR_WIDTH=4 • DEPTH=16 • PTR_W=5&amp;nbsp;" vertex="1">
-                    <mxGeometry height="28" width="1300" x="250" y="58" as="geometry"/>
-                </mxCell>
-                <mxCell id="arst" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7e8;strokeColor=#b96a13;fontColor=#203b5b;fontSize=13;align=center;verticalAlign=top;spacing=9;" value="TOP-LEVEL RESET&lt;br&gt;arst_n (active-low async assertion)" vertex="1">
-                    <mxGeometry height="55" width="400" x="700" y="100" as="geometry"/>
-                </mxCell>
-                <mxCell id="wr_reset" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#2878c8;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="u_wr_reset_sync : reset_sync&lt;br&gt;clk = wr_clk&lt;br&gt;arst_n = arst_n&lt;br&gt;srst_n = wr_rst_n&lt;br&gt;STAGES = RESET_SYNC_STAGES" vertex="1">
-                    <mxGeometry height="120" width="350" x="35" y="180" as="geometry"/>
-                </mxCell>
-                <mxCell id="rd_reset" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#effaf4;strokeColor=#159b70;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="u_rd_reset_sync : reset_sync&lt;br&gt;clk = rd_clk&lt;br&gt;arst_n = arst_n&lt;br&gt;srst_n = rd_rst_n&lt;br&gt;STAGES = RESET_SYNC_STAGES" vertex="1">
-                    <mxGeometry height="120" width="350" x="1415" y="180" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-2" edge="1" parent="1" source="wr_control" style="edgeStyle=none;html=1;" target="wr_ptr" value="">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="wr_control" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#2878c8;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="WRITE CONTROL (wr_clk)&lt;br&gt;Inputs: wr_en, full&lt;br&gt;wr_fire = wr_en &amp;&amp; !full&lt;br&gt;overflow &lt;= wr_en &amp;&amp; full&lt;br&gt;Accepted write advances pointer" vertex="1">
-                    <mxGeometry height="150" width="270" x="35" y="355" as="geometry"/>
-                </mxCell>
-                <mxCell id="wr_ptr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#2878c8;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="WRITE POINTER + GRAY&lt;br&gt;wbin, wgray [PTR_W-1:0]&lt;br&gt;wbin_next = wbin + wr_fire&lt;br&gt;wgray_next = bin_to_gray(wbin_next)&lt;br&gt;wr_clk: wbin &lt;= wbin_next&lt;br&gt;wr_clk: wgray &lt;= wgray_next" vertex="1">
-                    <mxGeometry height="175" width="330" x="330" y="345" as="geometry"/>
-                </mxCell>
-                <mxCell id="full_cmp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#2878c8;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="FULL DETECTION (wr_clk)&lt;br&gt;full_next = (wgray_next ==&lt;br&gt;{~rgray_sync2[PTR_W-1:PTR_W-2],&lt;br&gt; rgray_sync2[PTR_W-3:0]})&lt;br&gt;full &lt;= full_next" vertex="1">
-                    <mxGeometry height="115" width="330" x="330" y="555" as="geometry"/>
-                </mxCell>
-                <mxCell id="wr_outputs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#2878c8;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="WRITE OUTPUTS&lt;br&gt;full • overflow" vertex="1">
-                    <mxGeometry height="80" width="270" x="35" y="555" as="geometry"/>
-                </mxCell>
-                <mxCell id="memory" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#587ca9;fontColor=#203b5b;fontSize=13;align=center;verticalAlign=top;spacing=9;" value="ONE SHARED BEHAVIORAL ARRAY&lt;br&gt;mem[0:DEPTH-1]&lt;br&gt;Default: 16 words × 32 bits&lt;br&gt;&lt;br&gt;WRITE PORT (wr_clk):&lt;br&gt;if (wr_fire) mem[wbin[ADDR_WIDTH-1:0]] &amp;lt;= wr_data&lt;br&gt;&lt;br&gt;READ PORT (rd_clk):&lt;br&gt;if (rd_fire) rd_data &amp;lt;= mem[rbin[ADDR_WIDTH-1:0]]&lt;br&gt;rd_valid &amp;lt;= rd_fire&lt;br&gt;&lt;br&gt;RTL array placeholder — not an instantiated SRAM macro" vertex="1">
-                    <mxGeometry height="325" width="400" x="700" y="345" as="geometry"/>
-                </mxCell>
-                <mxCell id="rd_ptr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#effaf4;strokeColor=#159b70;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="READ POINTER + GRAY&lt;br&gt;rbin, rgray [PTR_W-1:0]&lt;br&gt;rbin_next = rbin + rd_fire&lt;br&gt;rgray_next = bin_to_gray(rbin_next)&lt;br&gt;rd_clk: rbin &lt;= rbin_next&lt;br&gt;rd_clk: rgray &lt;= rgray_next" vertex="1">
-                    <mxGeometry height="175" width="330" x="1140" y="345" as="geometry"/>
-                </mxCell>
-                <mxCell id="rd_control" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#effaf4;strokeColor=#159b70;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="READ CONTROL (rd_clk)&lt;br&gt;Inputs: rd_en, empty&lt;br&gt;rd_fire = rd_en &amp;&amp; !empty&lt;br&gt;underflow &lt;= rd_en &amp;&amp; empty&lt;br&gt;Accepted read advances pointer" vertex="1">
-                    <mxGeometry height="150" width="270" x="1495" y="355" as="geometry"/>
-                </mxCell>
-                <mxCell id="empty_cmp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#effaf4;strokeColor=#159b70;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="EMPTY DETECTION (rd_clk)&lt;br&gt;empty_next = (rgray_next == wgray_sync2)&lt;br&gt;empty &lt;= empty_next&lt;br&gt;Reset value: empty = 1" vertex="1">
-                    <mxGeometry height="115" width="330" x="1140" y="555" as="geometry"/>
-                </mxCell>
-                <mxCell id="rd_outputs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#effaf4;strokeColor=#159b70;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="READ OUTPUTS&lt;br&gt;rd_data[DATA_WIDTH-1:0]&lt;br&gt;rd_valid • empty • underflow" vertex="1">
-                    <mxGeometry height="95" width="270" x="1495" y="555" as="geometry"/>
-                </mxCell>
-                <mxCell id="cdc_rgray" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f0ff;strokeColor=#8a4bd1;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="READ POINTER → WRITE DOMAIN&lt;br&gt;rgray → rgray_sync1 → rgray_sync2&lt;br&gt;Both stages clocked by wr_clk&lt;br&gt;Async reset: wr_rst_n&lt;br&gt;Used by full comparison" vertex="1">
-                    <mxGeometry height="125" width="500" x="300" y="825" as="geometry"/>
-                </mxCell>
-                <mxCell id="cdc_wgray" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f0ff;strokeColor=#8a4bd1;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="WRITE POINTER → READ DOMAIN&lt;br&gt;wgray → wgray_sync1 → wgray_sync2&lt;br&gt;Both stages clocked by rd_clk&lt;br&gt;Async reset: rd_rst_n&lt;br&gt;Used by empty comparison" vertex="1">
-                    <mxGeometry height="125" width="500" x="1000" y="825" as="geometry"/>
-                </mxCell>
-                <mxCell id="ports" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#8ba6c7;fontColor=#203b5b;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="TOP-LEVEL PORTS — EXACT NAMES FROM cdc_fifo.sv&lt;br&gt;Inputs: arst_n, wr_clk, wr_en, wr_data[DATA_WIDTH-1:0], rd_clk, rd_en&lt;br&gt;Outputs: full, overflow, rd_data[DATA_WIDTH-1:0], rd_valid, empty, underflow&lt;br&gt;Parameters: DATA_WIDTH=32, ADDR_WIDTH=4, RESET_SYNC_STAGES=2&lt;br&gt;Internal reset nets: wr_rst_n, rd_rst_n • Internal controls: wr_fire, rd_fire" vertex="1">
-                    <mxGeometry height="150" width="1730" x="35" y="1000" as="geometry"/>
-                </mxCell>
-                <mxCell id="reset_write" edge="1" parent="1" source="arst" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b96a13;strokeWidth=2.5;fontColor=#b96a13;fontSize=12;labelBackgroundColor=#ffffff;" target="wr_reset" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="900" y="165"/>
-                            <mxPoint x="210" y="165"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="reset_read" edge="1" parent="1" source="arst" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#b96a13;strokeWidth=2.5;fontColor=#b96a13;fontSize=12;labelBackgroundColor=#ffffff;" target="rd_reset" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="900" y="165"/>
-                            <mxPoint x="1590" y="165"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="wr_reset_to_domain" edge="1" parent="1" source="wr_reset" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2878c8;strokeWidth=2.5;fontColor=#2878c8;fontSize=12;labelBackgroundColor=#ffffff;" target="wr_control" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="210" y="330"/>
-                            <mxPoint x="170" y="330"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="rd_reset_to_domain" edge="1" parent="1" source="rd_reset" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#159b70;strokeWidth=2.5;fontColor=#159b70;fontSize=12;labelBackgroundColor=#ffffff;" target="rd_control" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1590" y="330"/>
-                            <mxPoint x="1630" y="330"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="wr_fire_to_ptr" edge="1" parent="1" source="wr_control" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2878c8;strokeWidth=2.5;fontColor=#2878c8;fontSize=12;labelBackgroundColor=#ffffff;" target="wr_ptr" value="">
-                    <mxGeometry relative="1" x="0.0909" y="110" as="geometry">
-                        <mxPoint as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="wgray_next_to_full" edge="1" parent="1" source="wr_ptr" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2878c8;strokeWidth=2.5;fontColor=#2878c8;fontSize=12;labelBackgroundColor=#ffffff;" target="full_cmp" value="">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="full_to_write_outputs" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2878c8;strokeWidth=2.5;fontColor=#2878c8;fontSize=12;labelBackgroundColor=#ffffff;" target="wr_outputs" value="">
-                    <mxGeometry relative="1" x="-0.0345" as="geometry">
-                        <mxPoint x="340" y="614.5" as="sourcePoint"/>
-                        <mxPoint x="305" y="606" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="write_addr_to_memory" edge="1" parent="1" source="wr_ptr" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2878c8;strokeWidth=2.5;fontColor=#2878c8;fontSize=12;labelBackgroundColor=#ffffff;" target="memory" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="680" y="405"/>
-                            <mxPoint x="680" y="435"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="write_data_to_memory" edge="1" parent="1" source="WRXtCoZ713ESVt4tbm9m-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2878c8;strokeWidth=2.5;fontColor=#2878c8;fontSize=12;labelBackgroundColor=#ffffff;" target="memory" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="680" y="715"/>
-                            <mxPoint x="680" y="500"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="read_addr_to_memory" edge="1" parent="1" source="rd_ptr" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#159b70;strokeWidth=2.5;fontColor=#159b70;fontSize=12;labelBackgroundColor=#ffffff;" target="memory" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1120" y="405"/>
-                            <mxPoint x="1120" y="550"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="memory_data_to_rd_outputs" edge="1" parent="1" source="WRXtCoZ713ESVt4tbm9m-19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#159b70;strokeWidth=2.5;fontColor=#159b70;fontSize=12;labelBackgroundColor=#ffffff;" target="rd_outputs" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1480" y="700"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="rd_fire_to_ptr" edge="1" parent="1" source="rd_control" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#159b70;strokeWidth=2.5;fontColor=#159b70;fontSize=12;labelBackgroundColor=#ffffff;" target="rd_ptr" value="">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rgray_next_to_empty" edge="1" parent="1" source="rd_ptr" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#159b70;strokeWidth=2.5;fontColor=#159b70;fontSize=12;labelBackgroundColor=#ffffff;" target="empty_cmp" value="">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rgray_to_cdc" edge="1" parent="1" source="rd_ptr" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#8a4bd1;strokeWidth=2.5;fontColor=#8a4bd1;fontSize=12;labelBackgroundColor=#ffffff;dashed=1;dashPattern=8 6;" target="cdc_rgray" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1305" y="755"/>
-                            <mxPoint x="550" y="755"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="cdc_rgray_to_full" edge="1" parent="1" source="cdc_rgray" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#8a4bd1;strokeWidth=2.5;fontColor=#8a4bd1;fontSize=12;labelBackgroundColor=#ffffff;dashed=1;dashPattern=8 6;" target="full_cmp" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="550" y="790"/>
-                            <mxPoint x="680" y="790"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="wgray_to_cdc" edge="1" parent="1" source="WRXtCoZ713ESVt4tbm9m-12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#8a4bd1;strokeWidth=2.5;fontColor=#8a4bd1;fontSize=12;labelBackgroundColor=#ffffff;dashed=1;dashPattern=8 6;" target="cdc_wgray" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1250" y="775"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="cdc_wgray_to_empty" edge="1" parent="1" source="cdc_wgray" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#8a4bd1;strokeWidth=2.5;fontColor=#8a4bd1;fontSize=12;labelBackgroundColor=#ffffff;dashed=1;dashPattern=8 6;" target="empty_cmp" value="">
-                    <mxGeometry relative="1" x="-0.0841" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1250" y="795"/>
-                            <mxPoint x="1115" y="795"/>
-                            <mxPoint x="1115" y="640"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(40, 120, 200); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;wr_rst_n&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="120" x="40" y="320" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(40, 120, 200); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;wr_fire&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="60" x="275" y="390" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(40, 120, 200); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;wbin[3:0] address&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="100" x="620" y="380" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(40, 120, 200); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;wgray_next&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="70" x="510" y="528" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(40, 120, 200); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;full / overflow&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="80" x="250" y="570" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-11" edge="1" parent="1" source="wr_control" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#2878c8;strokeWidth=2.5;fontColor=#2878c8;fontSize=12;labelBackgroundColor=#ffffff;" target="WRXtCoZ713ESVt4tbm9m-10" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="315" y="480"/>
-                            <mxPoint x="315" y="715"/>
-                        </Array>
-                        <mxPoint x="305" y="480" as="sourcePoint"/>
-                        <mxPoint x="700" y="500" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(40, 120, 200); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;wr_data + wr_fire&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="120" x="435" y="710" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-13" edge="1" parent="1" source="wr_ptr" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#8a4bd1;strokeWidth=2.5;fontColor=#8a4bd1;fontSize=12;labelBackgroundColor=#ffffff;dashed=1;dashPattern=8 6;" target="WRXtCoZ713ESVt4tbm9m-12" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="495" y="775"/>
-                        </Array>
-                        <mxPoint x="495" y="520" as="sourcePoint"/>
-                        <mxPoint x="1250" y="825" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(138, 75, 209); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;wgray → read-domain sync&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="160" x="790" y="770" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(138, 75, 209); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;rgray_sync2 → full compare&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="170" x="570" y="780" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(138, 75, 209); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;rgray → write-domain sync&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="160" x="830" y="740" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(138, 75, 209); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;wgray_sync2 → empty compare&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="190" x="1020" y="790" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(21, 155, 112); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;rbin[3:0] address&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="100" x="1090" y="508" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(21, 155, 112); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;rgray_next&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="80" x="1320" y="528" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-20" edge="1" parent="1" source="memory" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#159b70;strokeWidth=2.5;fontColor=#159b70;fontSize=12;labelBackgroundColor=#ffffff;" target="WRXtCoZ713ESVt4tbm9m-19" value="">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1120" y="625"/>
-                            <mxPoint x="1120" y="700"/>
-                        </Array>
-                        <mxPoint x="1100" y="625" as="sourcePoint"/>
-                        <mxPoint x="1495" y="603" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(21, 155, 112); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;registered rd_data / rd_valid&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="160" x="1240" y="690" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(21, 155, 112); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;rd_fire&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="70" x="1440" y="460" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(21, 155, 112); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;rd_rst_n&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="100" x="1560" y="317" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(185, 106, 19); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;arst_n → u_rd_reset_sync&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="28" width="170" x="1160" y="152" as="geometry"/>
-                </mxCell>
-                <mxCell id="WRXtCoZ713ESVt4tbm9m-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(185, 106, 19); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;arst_n → u_wr_reset_sync&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="28" width="170" x="470" y="152" as="geometry"/>
-                </mxCell>
-                <mxCell id="h0FdIKjBga_UtHznnXE_-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(21, 155, 112); white-space: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;rd_firre --&amp;gt; rd_valid&lt;/span&gt;" vertex="1">
-                    <mxGeometry height="20" width="120" x="1580" y="520" as="geometry"/>
-                </mxCell>
-                <mxCell id="h0FdIKjBga_UtHznnXE_-6" edge="1" parent="1" source="rd_control" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#159b70;strokeWidth=2.5;fontColor=#159b70;fontSize=12;labelBackgroundColor=#ffffff;" value="">
-                    <mxGeometry relative="1" x="0.0909" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1708" y="541"/>
-                            <mxPoint x="1710" y="541"/>
-                            <mxPoint x="1710" y="548"/>
-                        </Array>
-                        <mxPoint x="1730" y="528" as="sourcePoint"/>
-                        <mxPoint x="1700" y="548" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
-</mxfile>
+<svg xmlns="http://www.w3.org/2000/svg" width="1815.0" height="1200.0" viewBox="-25.0 -25.0 1815.0 1200.0">
+<defs><style>text{font-family:Arial,Helvetica,sans-serif;dominant-baseline:middle;text-anchor:middle}</style></defs>
+<polyline points="170.0,430.0 495.0,432.5" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="900.0,165.0 210.0,165.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="900.0,165.0 1590.0,165.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="210.0,330.0 170.0,330.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1590.0,330.0 1630.0,330.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="0.0,0.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="495.0,432.5 495.0,612.5" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="680.0,405.0 680.0,435.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="680.0,715.0 680.0,500.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1120.0,405.0 1120.0,550.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1480.0,700.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1630.0,430.0 1305.0,432.5" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1305.0,432.5 1305.0,612.5" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1305.0,755.0 550.0,755.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="550.0,790.0 680.0,790.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1250.0,775.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1250.0,795.0 1115.0,795.0 1115.0,640.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="315.0,480.0 315.0,715.0 305.0,480.0 700.0,500.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="495.0,775.0 495.0,520.0 1250.0,825.0" fill="none" stroke="#000000" stroke-width="2"/>
+<polyline points="1120.0,625.0 1120.0,700.0 1100.0,625.0 1495.0,603.0" fill="none" stroke="#000000" stroke-width="2"/>
+<rect x="300.0" y="15.0" width="1200.0" height="45.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="900.0" y="37.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">CDC FIFO — RTL ALIGNED MICROARCHITECHTURE</text>
+<rect x="250.0" y="58.0" width="1300.0" height="28.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="900.0" y="72.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Exact RTL signal names • DATA_WIDTH=32 • ADDR_WIDTH=4 • DEPTH=16 • PTR_W=5 </text>
+<rect x="700.0" y="100.0" width="400.0" height="55.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="900.0" y="119.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">TOP-LEVEL RESET</text>
+<text x="900.0" y="135.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">arst_n (active-low async assertion)</text>
+<rect x="35.0" y="180.0" width="350.0" height="120.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="210.0" y="208.8" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">u_wr_reset_sync : reset_sync</text>
+<text x="210.0" y="224.4" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">clk = wr_clk</text>
+<text x="210.0" y="240.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">arst_n = arst_n</text>
+<text x="210.0" y="255.6" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">srst_n = wr_rst_n</text>
+<text x="210.0" y="271.2" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">STAGES = RESET_SYNC_STAGES</text>
+<rect x="1415.0" y="180.0" width="350.0" height="120.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1590.0" y="208.8" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">u_rd_reset_sync : reset_sync</text>
+<text x="1590.0" y="224.4" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">clk = rd_clk</text>
+<text x="1590.0" y="240.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">arst_n = arst_n</text>
+<text x="1590.0" y="255.6" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">srst_n = rd_rst_n</text>
+<text x="1590.0" y="271.2" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">STAGES = RESET_SYNC_STAGES</text>
+<rect x="35.0" y="355.0" width="270.0" height="150.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="170.0" y="398.8" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">WRITE CONTROL (wr_clk)</text>
+<text x="170.0" y="414.4" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Inputs: wr_en, full</text>
+<text x="170.0" y="430.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wr_fire = wr_en &amp;&amp; !full</text>
+<text x="170.0" y="445.6" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">overflow &lt;= wr_en &amp;&amp; full</text>
+<text x="170.0" y="461.2" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Accepted write advances pointer</text>
+<rect x="330.0" y="345.0" width="330.0" height="175.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="495.0" y="393.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">WRITE POINTER + GRAY</text>
+<text x="495.0" y="409.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wbin, wgray [PTR_W-1:0]</text>
+<text x="495.0" y="424.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wbin_next = wbin + wr_fire</text>
+<text x="495.0" y="440.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wgray_next = bin_to_gray(wbin_next)</text>
+<text x="495.0" y="455.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wr_clk: wbin &lt;= wbin_next</text>
+<text x="495.0" y="471.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wr_clk: wgray &lt;= wgray_next</text>
+<rect x="330.0" y="555.0" width="330.0" height="115.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="495.0" y="581.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">FULL DETECTION (wr_clk)</text>
+<text x="495.0" y="596.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">full_next = (wgray_next ==</text>
+<text x="495.0" y="612.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">{~rgray_sync2[PTR_W-1:PTR_W-2],</text>
+<text x="495.0" y="628.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle"> rgray_sync2[PTR_W-3:0]})</text>
+<text x="495.0" y="643.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">full &lt;= full_next</text>
+<rect x="35.0" y="555.0" width="270.0" height="80.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="170.0" y="587.2" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">WRITE OUTPUTS</text>
+<text x="170.0" y="602.8" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">full • overflow</text>
+<rect x="700.0" y="345.0" width="400.0" height="325.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="900.0" y="445.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">ONE SHARED BEHAVIORAL ARRAY</text>
+<text x="900.0" y="460.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">mem[0:DEPTH-1]</text>
+<text x="900.0" y="476.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Default: 16 words × 32 bits</text>
+<text x="900.0" y="491.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">WRITE PORT (wr_clk):</text>
+<text x="900.0" y="507.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">if (wr_fire) mem[wbin[ADDR_WIDTH-1:0]] &lt;= wr_data</text>
+<text x="900.0" y="523.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">READ PORT (rd_clk):</text>
+<text x="900.0" y="538.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">if (rd_fire) rd_data &lt;= mem[rbin[ADDR_WIDTH-1:0]]</text>
+<text x="900.0" y="554.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_valid &lt;= rd_fire</text>
+<text x="900.0" y="569.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">RTL array placeholder — not an instantiated SRAM macro</text>
+<rect x="1140.0" y="345.0" width="330.0" height="175.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1305.0" y="393.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">READ POINTER + GRAY</text>
+<text x="1305.0" y="409.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rbin, rgray [PTR_W-1:0]</text>
+<text x="1305.0" y="424.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rbin_next = rbin + rd_fire</text>
+<text x="1305.0" y="440.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rgray_next = bin_to_gray(rbin_next)</text>
+<text x="1305.0" y="455.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_clk: rbin &lt;= rbin_next</text>
+<text x="1305.0" y="471.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_clk: rgray &lt;= rgray_next</text>
+<rect x="1495.0" y="355.0" width="270.0" height="150.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1630.0" y="398.8" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">READ CONTROL (rd_clk)</text>
+<text x="1630.0" y="414.4" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Inputs: rd_en, empty</text>
+<text x="1630.0" y="430.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_fire = rd_en &amp;&amp; !empty</text>
+<text x="1630.0" y="445.6" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">underflow &lt;= rd_en &amp;&amp; empty</text>
+<text x="1630.0" y="461.2" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Accepted read advances pointer</text>
+<rect x="1140.0" y="555.0" width="330.0" height="115.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1305.0" y="589.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">EMPTY DETECTION (rd_clk)</text>
+<text x="1305.0" y="604.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">empty_next = (rgray_next == wgray_sync2)</text>
+<text x="1305.0" y="620.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">empty &lt;= empty_next</text>
+<text x="1305.0" y="635.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Reset value: empty = 1</text>
+<rect x="1495.0" y="555.0" width="270.0" height="95.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1630.0" y="586.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">READ OUTPUTS</text>
+<text x="1630.0" y="602.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_data[DATA_WIDTH-1:0]</text>
+<text x="1630.0" y="618.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_valid • empty • underflow</text>
+<rect x="300.0" y="825.0" width="500.0" height="125.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="550.0" y="856.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">READ POINTER → WRITE DOMAIN</text>
+<text x="550.0" y="871.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rgray → rgray_sync1 → rgray_sync2</text>
+<text x="550.0" y="887.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Both stages clocked by wr_clk</text>
+<text x="550.0" y="903.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Async reset: wr_rst_n</text>
+<text x="550.0" y="918.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Used by full comparison</text>
+<rect x="1000.0" y="825.0" width="500.0" height="125.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1250.0" y="856.3" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">WRITE POINTER → READ DOMAIN</text>
+<text x="1250.0" y="871.9" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wgray → wgray_sync1 → wgray_sync2</text>
+<text x="1250.0" y="887.5" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Both stages clocked by rd_clk</text>
+<text x="1250.0" y="903.1" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Async reset: rd_rst_n</text>
+<text x="1250.0" y="918.7" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Used by empty comparison</text>
+<rect x="35.0" y="1000.0" width="1730.0" height="150.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="900.0" y="1043.8" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">TOP-LEVEL PORTS — EXACT NAMES FROM cdc_fifo.sv</text>
+<text x="900.0" y="1059.4" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Inputs: arst_n, wr_clk, wr_en, wr_data[DATA_WIDTH-1:0], rd_clk, rd_en</text>
+<text x="900.0" y="1075.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Outputs: full, overflow, rd_data[DATA_WIDTH-1:0], rd_valid, empty, underflow</text>
+<text x="900.0" y="1090.6" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Parameters: DATA_WIDTH=32, ADDR_WIDTH=4, RESET_SYNC_STAGES=2</text>
+<text x="900.0" y="1106.2" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">Internal reset nets: wr_rst_n, rd_rst_n • Internal controls: wr_fire, rd_fire</text>
+<rect x="40.0" y="320.0" width="120.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="100.0" y="330.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wr_rst_n</text>
+<rect x="275.0" y="390.0" width="60.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="305.0" y="400.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wr_fire</text>
+<rect x="620.0" y="380.0" width="100.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="670.0" y="390.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wbin[3:0] address</text>
+<rect x="510.0" y="528.0" width="70.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="545.0" y="538.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wgray_next</text>
+<rect x="250.0" y="570.0" width="80.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="290.0" y="580.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">full / overflow</text>
+<rect x="435.0" y="710.0" width="120.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="495.0" y="720.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wr_data + wr_fire</text>
+<rect x="790.0" y="770.0" width="160.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="870.0" y="780.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wgray → read-domain sync</text>
+<rect x="570.0" y="780.0" width="170.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="655.0" y="790.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rgray_sync2 → full compare</text>
+<rect x="830.0" y="740.0" width="160.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="910.0" y="750.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rgray → write-domain sync</text>
+<rect x="1020.0" y="790.0" width="190.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1115.0" y="800.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">wgray_sync2 → empty compare</text>
+<rect x="1090.0" y="508.0" width="100.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1140.0" y="518.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rbin[3:0] address</text>
+<rect x="1320.0" y="528.0" width="80.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1360.0" y="538.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rgray_next</text>
+<rect x="1240.0" y="690.0" width="160.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1320.0" y="700.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">registered rd_data / rd_valid</text>
+<rect x="1440.0" y="460.0" width="70.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1475.0" y="470.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_fire</text>
+<rect x="1560.0" y="317.0" width="100.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1610.0" y="327.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_rst_n</text>
+<rect x="1160.0" y="152.0" width="170.0" height="28.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1245.0" y="166.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">arst_n → u_rd_reset_sync</text>
+<rect x="470.0" y="152.0" width="170.0" height="28.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="555.0" y="166.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">arst_n → u_wr_reset_sync</text>
+<rect x="1580.0" y="520.0" width="120.0" height="20.0" rx="0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+<text x="1640.0" y="530.0" fill="#000000" font-size="13" text-anchor="middle" dominant-baseline="middle">rd_firre --&gt; rd_valid</text>
+</svg>

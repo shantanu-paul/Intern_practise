@@ -1,4 +1,12 @@
-# CDC FIFO Specification
+# Functional Specification: Asynchronous CDC FIFO
+
+## Author: Syeda Nura Nabiah (nabiah19@gmail.com)
+## Module: cdc_fifo.sv
+
+
+
+##
+##
 
 ## 1. Purpose
 
@@ -98,6 +106,10 @@ The full comparison inverts the top two Gray bits of the synchronized read point
 - Macro read latency matches the RTL's one-cycle registered-read behavior, or a wrapper pipeline is added.
 - Read-during-write and cross-port same-address semantics are understood and validated.
 - Memory test (MBIST), scan, low-power behavior, and physical timing are handled by the ASIC flow.
+
+## Implementation Status: Design specification with SRAM integration is pending. The current RTL uses a behavioral memory array as a placeholder for the intended dual-port SRAM. The actual SRAM macro has not yet been selected or integrated. After macro selection, read latency, read-during-write behavior, cross-port access, and timing compatibility must be verified.
+
+
 
 ## 8. Error policy
 

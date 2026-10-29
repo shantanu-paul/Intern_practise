@@ -110,6 +110,17 @@ The full comparison inverts the top two Gray bits of the synchronized read point
 ## Implementation Status: Design specification with SRAM integration is pending. The current RTL uses a behavioral memory array as a placeholder for the intended dual-port SRAM. The actual SRAM macro has not yet been selected or integrated. After macro selection, read latency, read-during-write behavior, cross-port access, and timing compatibility must be verified.
 
 
+## Design Scope and Limitation
+
+This FIFO is designed to transfer and buffer data between two independent clock domains. It uses full and empty flags to control write and read acceptance and does not require an externally visible occupancy counter for basic FIFO operation.
+
+A write is accepted only when wr_en is asserted and full is deasserted at the active write-clock edge. If a write is attempted while the FIFO is full, the write is rejected and overflow is asserted. The producer must retain and retry any rejected data that must be preserved.
+
+The FIFO supports applications where the producer can respect backpressure. It does not guarantee acceptance of an entire non-pausable DMA burst. Such applications require additional system-level burst admission control, buffering, or capacity management.
+
+The absence of an occupancy counter is therefore not, by itself, a design fault. Suitability for a particular application depends on the producer protocol and system requirements.
+
+
 
 ## 8. Error policy
 

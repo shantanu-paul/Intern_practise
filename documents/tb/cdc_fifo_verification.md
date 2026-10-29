@@ -89,24 +89,9 @@ make clean
 
 The Makefile compiles all `.sv` files in `interface/`, `source/`, and `testbench/`, then elaborates the selected `TOP`.
 
-## Manual Vivado commands (optional)
 
-From the repository root, with Vivado tools on `PATH`:
 
-```bash
-mkdir -p build log
-xvlog -sv interface/*.sv source/*.sv testbench/*.sv
-xelab cdc_fifo_linear_tb -s snap_linear
-xsim snap_linear -runall
 
-xelab cdc_fifo_layered_tb -s snap_layered
-xsim snap_layered -runall
-
-xelab cdc_fifo_units_tb -s snap_units
-xsim snap_units -runall
-```
-
-If running all three manually, each `xelab` command creates a separate snapshot. The Makefile route is recommended because it also captures logs and cleans before `make all`.
 
 ## What the integration tests check
 

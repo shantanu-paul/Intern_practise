@@ -1,1 +1,1319 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent; color-scheme: light;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1732px" height="1136px" viewBox="0 0 1732 1136" id="ge-svg-VZcZsBfNinQtK2q4WJhG" content="&lt;mxfile&gt;&lt;diagram id=&quot;cdc-fifo-detailed&quot; name=&quot;CDC FIFO Detailed Connections&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;"><style type="text/css">@supports (color: light-dark(#000, #fff)) { #ge-svg-VZcZsBfNinQtK2q4WJhG { --ge-adaptive-bg: light-dark(#ffffff, var(--ge-dark-color, #121212)); } }</style><defs/><g><g data-cell-id="0"><g data-cell-id="1"><g data-cell-id="title"><g><rect x="265" y="0" width="1200" height="45" fill="none" stroke="none" pointer-events="all"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1198px; height: 1px; padding-top: 23px; margin-left: 266px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #173b63; "><div style="display: inline-block; font-size: 28px; font-family: Helvetica; color: light-dark(#173b63, #a3c2e4); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">CDC FIFO — RTL ALIGNED MICROARCHITECHTURE</div></div></div></foreignObject><text x="865" y="31" fill="#173b63" font-family="Helvetica" font-size="28px" text-anchor="middle" font-weight="bold" style="fill: light-dark(rgb(23, 59, 99), rgb(163, 194, 228));">CDC FIFO — RTL ALIGNED MICROARCHITECHTURE</text></switch></g></g></g><g data-cell-id="subtitle"><g><rect x="215" y="43" width="1300" height="28" fill="none" stroke="none" pointer-events="all"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1298px; height: 1px; padding-top: 57px; margin-left: 216px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #203b5b; "><div style="display: inline-block; font-size: 16px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">Exact RTL signal names • DATA_WIDTH=32 • ADDR_WIDTH=4 • DEPTH=16 • PTR_W=5 </div></div></div></foreignObject><text x="865" y="62" fill="#203b5b" font-family="Helvetica" font-size="16px" text-anchor="middle" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">Exact RTL signal names • DATA_WIDTH=32 • ADDR_WIDTH=4 • DEPTH=16 • PTR_W=5</text></switch></g></g></g><g data-cell-id="arst"><g transform="translate(0.5,0.5)"><rect x="665" y="85" width="400" height="55" rx="8.25" ry="8.25" fill="#fff7e8" stroke="#b96a13" pointer-events="all" style="fill: light-dark(rgb(255, 247, 232), rgb(31, 24, 11)); stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 384px; height: 1px; padding-top: 99px; margin-left: 673px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">TOP-LEVEL RESET<br />arst_n (active-low async assertion)</div></div></div></foreignObject><text x="865" y="112" fill="#203b5b" font-family="Helvetica" font-size="13px" text-anchor="middle" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="865" y="112">TOP-LEVEL RESET</tspan><tspan x="865" y="128">arst_n (active-low async assertion)</tspan></text></switch></g></g></g><g data-cell-id="wr_reset"><g transform="translate(0.5,0.5)"><rect x="0" y="165" width="350" height="120" rx="18" ry="18" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 334px; height: 1px; padding-top: 179px; margin-left: 9px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">u_wr_reset_sync : reset_sync<br />clk = wr_clk<br />arst_n = arst_n<br />srst_n = wr_rst_n<br />STAGES = RESET_SYNC_STAGES</div></div></div></foreignObject><text x="9" y="192" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="9" y="192">u_wr_reset_sync : reset_sync</tspan><tspan x="9" y="208">clk = wr_clk</tspan><tspan x="9" y="224">arst_n = arst_n</tspan><tspan x="9" y="240">srst_n = wr_rst_n</tspan><tspan x="9" y="256">STAGES = RESET_SYNC_STAGES</tspan></text></switch></g></g></g><g data-cell-id="rd_reset"><g transform="translate(0.5,0.5)"><rect x="1380" y="165" width="350" height="120" rx="18" ry="18" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 334px; height: 1px; padding-top: 179px; margin-left: 1389px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">u_rd_reset_sync : reset_sync<br />clk = rd_clk<br />arst_n = arst_n<br />srst_n = rd_rst_n<br />STAGES = RESET_SYNC_STAGES</div></div></div></foreignObject><text x="1389" y="192" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="1389" y="192">u_rd_reset_sync : reset_sync</tspan><tspan x="1389" y="208">clk = rd_clk</tspan><tspan x="1389" y="224">arst_n = arst_n</tspan><tspan x="1389" y="240">srst_n = rd_rst_n</tspan><tspan x="1389" y="256">STAGES = RESET_SYNC_STAGES</tspan></text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-2"><g transform="translate(0.5,0.5)"><path d="M 270 416.04 L 288.63 416.18" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 293.88 416.22 L 286.86 419.67 L 288.63 416.18 L 286.91 412.67 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g></g><g data-cell-id="wr_control"><g transform="translate(0.5,0.5)"><rect x="0" y="340" width="270" height="150" rx="22.5" ry="22.5" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 354px; margin-left: 9px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">WRITE CONTROL (wr_clk)<br />Inputs: wr_en, full<br />wr_fire = wr_en &amp;&amp; !full<br />overflow &lt;= wr_en &amp;&amp; full<br />Accepted write advances pointer</div></div></div></foreignObject><text x="9" y="367" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="9" y="367">WRITE CONTROL (wr_clk)</tspan><tspan x="9" y="383">Inputs: wr_en, full</tspan><tspan x="9" y="399">wr_fire = wr_en &amp;&amp; !full</tspan><tspan x="9" y="415">overflow &lt;= wr_en &amp;&amp; full</tspan><tspan x="9" y="431">Accepted write advances pointer</tspan></text></switch></g></g></g><g data-cell-id="wr_ptr"><g transform="translate(0.5,0.5)"><rect x="295" y="330" width="330" height="175" rx="26.25" ry="26.25" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 314px; height: 1px; padding-top: 344px; margin-left: 304px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">WRITE POINTER + GRAY<br />wbin, wgray [PTR_W-1:0]<br />wbin_next = wbin + wr_fire<br />wgray_next = bin_to_gray(wbin_next)<br />wr_clk: wbin &lt;= wbin_next<br />wr_clk: wgray &lt;= wgray_next</div></div></div></foreignObject><text x="304" y="357" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="304" y="357">WRITE POINTER + GRAY</tspan><tspan x="304" y="373">wbin, wgray [PTR_W-1:0]</tspan><tspan x="304" y="389">wbin_next = wbin + wr_fire</tspan><tspan x="304" y="405">wgray_next = bin_to_gray(wbin_next)</tspan><tspan x="304" y="421">wr_clk: wbin &lt;= wbin_next</tspan><tspan x="304" y="437">wr_clk: wgray &lt;= wgray_next</tspan></text></switch></g></g></g><g data-cell-id="full_cmp"><g transform="translate(0.5,0.5)"><rect x="295" y="540" width="330" height="115" rx="17.25" ry="17.25" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 314px; height: 1px; padding-top: 554px; margin-left: 304px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">FULL DETECTION (wr_clk)<br />full_next = (wgray_next ==<br />{~rgray_sync2[PTR_W-1:PTR_W-2],<br /> rgray_sync2[PTR_W-3:0]})<br />full &lt;= full_next</div></div></div></foreignObject><text x="304" y="567" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="304" y="567">FULL DETECTION (wr_clk)</tspan><tspan x="304" y="583">full_next = (wgray_next ==</tspan><tspan x="304" y="599">{~rgray_sync2[PTR_W-1:PTR_W-2],</tspan><tspan x="304" y="615">rgray_sync2[PTR_W-3:0]})</tspan><tspan x="304" y="631">full &lt;= full_next</tspan></text></switch></g></g></g><g data-cell-id="wr_outputs"><g transform="translate(0.5,0.5)"><rect x="0" y="540" width="270" height="80" rx="12" ry="12" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 554px; margin-left: 9px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">WRITE OUTPUTS<br />full • overflow</div></div></div></foreignObject><text x="9" y="567" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="9" y="567">WRITE OUTPUTS</tspan><tspan x="9" y="583">full • overflow</tspan></text></switch></g></g></g><g data-cell-id="memory"><g transform="translate(0.5,0.5)"><rect x="665" y="330" width="400" height="325" rx="48.75" ry="48.75" fill="#f5f8fc" stroke="#587ca9" pointer-events="all" style="fill: light-dark(rgb(245, 248, 252), rgb(22, 24, 28)); stroke: light-dark(rgb(88, 124, 169), rgb(108, 138, 177));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 384px; height: 1px; padding-top: 344px; margin-left: 673px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">ONE SHARED BEHAVIORAL ARRAY<br />mem[0:DEPTH-1]<br />Default: 16 words × 32 bits<br /><br />WRITE PORT (wr_clk):<br />if (wr_fire) mem[wbin[ADDR_WIDTH-1:0]] &lt;= wr_data<br /><br />READ PORT (rd_clk):<br />if (rd_fire) rd_data &lt;= mem[rbin[ADDR_WIDTH-1:0]]<br />rd_valid &lt;= rd_fire<br /><br />RTL array placeholder — not an instantiated SRAM macro</div></div></div></foreignObject><text x="865" y="357" fill="#203b5b" font-family="Helvetica" font-size="13px" text-anchor="middle" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="865" y="357">ONE SHARED BEHAVIORAL ARRAY</tspan><tspan x="865" y="373">mem[0:DEPTH-1]</tspan><tspan x="865" y="389">Default: 16 words × 32 bits</tspan><tspan x="865" y="405"></tspan><tspan x="865" y="421">WRITE PORT (wr_clk):</tspan><tspan x="865" y="437">if (wr_fire) mem[wbin[ADDR_WIDTH-1:0]] &lt;= wr_data</tspan><tspan x="865" y="453"></tspan><tspan x="865" y="469">READ PORT (rd_clk):</tspan><tspan x="865" y="485">if (rd_fire) rd_data &lt;= mem[rbin[ADDR_WIDTH-1:0]]</tspan><tspan x="865" y="501">rd_valid &lt;= rd_fire</tspan><tspan x="865" y="517"></tspan><tspan x="865" y="533">RTL array placeholder — not an instantiated SRAM macro</tspan></text></switch></g></g></g><g data-cell-id="rd_ptr"><g transform="translate(0.5,0.5)"><rect x="1105" y="330" width="330" height="175" rx="26.25" ry="26.25" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 314px; height: 1px; padding-top: 344px; margin-left: 1114px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">READ POINTER + GRAY<br />rbin, rgray [PTR_W-1:0]<br />rbin_next = rbin + rd_fire<br />rgray_next = bin_to_gray(rbin_next)<br />rd_clk: rbin &lt;= rbin_next<br />rd_clk: rgray &lt;= rgray_next</div></div></div></foreignObject><text x="1114" y="357" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="1114" y="357">READ POINTER + GRAY</tspan><tspan x="1114" y="373">rbin, rgray [PTR_W-1:0]</tspan><tspan x="1114" y="389">rbin_next = rbin + rd_fire</tspan><tspan x="1114" y="405">rgray_next = bin_to_gray(rbin_next)</tspan><tspan x="1114" y="421">rd_clk: rbin &lt;= rbin_next</tspan><tspan x="1114" y="437">rd_clk: rgray &lt;= rgray_next</tspan></text></switch></g></g></g><g data-cell-id="rd_control"><g transform="translate(0.5,0.5)"><rect x="1460" y="340" width="270" height="150" rx="22.5" ry="22.5" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 354px; margin-left: 1469px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">READ CONTROL (rd_clk)<br />Inputs: rd_en, empty<br />rd_fire = rd_en &amp;&amp; !empty<br />underflow &lt;= rd_en &amp;&amp; empty<br />Accepted read advances pointer</div></div></div></foreignObject><text x="1469" y="367" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="1469" y="367">READ CONTROL (rd_clk)</tspan><tspan x="1469" y="383">Inputs: rd_en, empty</tspan><tspan x="1469" y="399">rd_fire = rd_en &amp;&amp; !empty</tspan><tspan x="1469" y="415">underflow &lt;= rd_en &amp;&amp; empty</tspan><tspan x="1469" y="431">Accepted read advances pointer</tspan></text></switch></g></g></g><g data-cell-id="empty_cmp"><g transform="translate(0.5,0.5)"><rect x="1105" y="540" width="330" height="115" rx="17.25" ry="17.25" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 314px; height: 1px; padding-top: 554px; margin-left: 1114px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">EMPTY DETECTION (rd_clk)<br />empty_next = (rgray_next == wgray_sync2)<br />empty &lt;= empty_next<br />Reset value: empty = 1</div></div></div></foreignObject><text x="1114" y="567" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="1114" y="567">EMPTY DETECTION (rd_clk)</tspan><tspan x="1114" y="583">empty_next = (rgray_next == wgray_sync2)</tspan><tspan x="1114" y="599">empty &lt;= empty_next</tspan><tspan x="1114" y="615">Reset value: empty = 1</tspan></text></switch></g></g></g><g data-cell-id="rd_outputs"><g transform="translate(0.5,0.5)"><rect x="1460" y="540" width="270" height="95" rx="14.25" ry="14.25" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 554px; margin-left: 1469px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">READ OUTPUTS<br />rd_data[DATA_WIDTH-1:0]<br />rd_valid • empty • underflow</div></div></div></foreignObject><text x="1469" y="567" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="1469" y="567">READ OUTPUTS</tspan><tspan x="1469" y="583">rd_data[DATA_WIDTH-1:0]</tspan><tspan x="1469" y="599">rd_valid • empty • underflow</tspan></text></switch></g></g></g><g data-cell-id="cdc_rgray"><g transform="translate(0.5,0.5)"><rect x="265" y="810" width="500" height="125" rx="18.75" ry="18.75" fill="#f7f0ff" stroke="#8a4bd1" pointer-events="all" style="fill: light-dark(rgb(247, 240, 255), rgb(33, 27, 40)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 484px; height: 1px; padding-top: 824px; margin-left: 274px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">READ POINTER → WRITE DOMAIN<br />rgray → rgray_sync1 → rgray_sync2<br />Both stages clocked by wr_clk<br />Async reset: wr_rst_n<br />Used by full comparison</div></div></div></foreignObject><text x="274" y="837" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="274" y="837">READ POINTER → WRITE DOMAIN</tspan><tspan x="274" y="853">rgray → rgray_sync1 → rgray_sync2</tspan><tspan x="274" y="869">Both stages clocked by wr_clk</tspan><tspan x="274" y="885">Async reset: wr_rst_n</tspan><tspan x="274" y="901">Used by full comparison</tspan></text></switch></g></g></g><g data-cell-id="cdc_wgray"><g transform="translate(0.5,0.5)"><rect x="965" y="810" width="500" height="125" rx="18.75" ry="18.75" fill="#f7f0ff" stroke="#8a4bd1" pointer-events="all" style="fill: light-dark(rgb(247, 240, 255), rgb(33, 27, 40)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 484px; height: 1px; padding-top: 824px; margin-left: 974px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">WRITE POINTER → READ DOMAIN<br />wgray → wgray_sync1 → wgray_sync2<br />Both stages clocked by rd_clk<br />Async reset: rd_rst_n<br />Used by empty comparison</div></div></div></foreignObject><text x="974" y="837" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="974" y="837">WRITE POINTER → READ DOMAIN</tspan><tspan x="974" y="853">wgray → wgray_sync1 → wgray_sync2</tspan><tspan x="974" y="869">Both stages clocked by rd_clk</tspan><tspan x="974" y="885">Async reset: rd_rst_n</tspan><tspan x="974" y="901">Used by empty comparison</tspan></text></switch></g></g></g><g data-cell-id="ports"><g transform="translate(0.5,0.5)"><rect x="0" y="985" width="1730" height="150" rx="22.5" ry="22.5" fill="#f5f8fc" stroke="#8ba6c7" pointer-events="all" style="fill: light-dark(rgb(245, 248, 252), rgb(22, 24, 28)); stroke: light-dark(rgb(139, 166, 199), rgb(76, 100, 128));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1714px; height: 1px; padding-top: 999px; margin-left: 9px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; "><div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">TOP-LEVEL PORTS — EXACT NAMES FROM cdc_fifo.sv<br />Inputs: arst_n, wr_clk, wr_en, wr_data[DATA_WIDTH-1:0], rd_clk, rd_en<br />Outputs: full, overflow, rd_data[DATA_WIDTH-1:0], rd_valid, empty, underflow<br />Parameters: DATA_WIDTH=32, ADDR_WIDTH=4, RESET_SYNC_STAGES=2<br />Internal reset nets: wr_rst_n, rd_rst_n • Internal controls: wr_fire, rd_fire</div></div></div></foreignObject><text x="9" y="1012" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));"><tspan x="9" y="1012">TOP-LEVEL PORTS — EXACT NAMES FROM cdc_fifo.sv</tspan><tspan x="9" y="1028">Inputs: arst_n, wr_clk, wr_en, wr_data[DATA_WIDTH-1:0], rd_clk, rd_en</tspan><tspan x="9" y="1044">Outputs: full, overflow, rd_data[DATA_WIDTH-1:0], rd_valid, empty, underflow</tspan><tspan x="9" y="1060">Parameters: DATA_WIDTH=32, ADDR_WIDTH=4, RESET_SYNC_STAGES=2</tspan><tspan x="9" y="1076">Internal reset nets: wr_rst_n, rd_rst_n • Internal controls: wr_fire, rd_fire</tspan></text></switch></g></g></g><g data-cell-id="reset_write"><g transform="translate(0.5,0.5)"><path d="M 865 140 L 865 145 Q 865 150 855 150 L 185 150 Q 175 150 175 151.85 L 175 153.7" fill="none" stroke="#b96a13" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/><path d="M 175 162.2 L 170.75 153.7 L 179.25 153.7 Z" fill="#b96a13" stroke="#b96a13" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(185, 106, 19), rgb(196, 128, 53)); stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/></g></g><g data-cell-id="reset_read"><g transform="translate(0.5,0.5)"><path d="M 865 140 L 865 145 Q 865 150 875 150 L 1545 150 Q 1555 150 1555 151.85 L 1555 153.7" fill="none" stroke="#b96a13" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/><path d="M 1555 162.2 L 1550.75 153.7 L 1559.25 153.7 Z" fill="#b96a13" stroke="#b96a13" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(185, 106, 19), rgb(196, 128, 53)); stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/></g></g><g data-cell-id="wr_reset_to_domain"><g transform="translate(0.5,0.5)"><path d="M 175 285 L 175 305 Q 175 315 165 315 L 145 315 Q 135 315 135 321.85 L 135 328.7" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/><path d="M 135 337.2 L 130.75 328.7 L 139.25 328.7 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g></g><g data-cell-id="rd_reset_to_domain"><g transform="translate(0.5,0.5)"><path d="M 1555 285 L 1555 305 Q 1555 315 1565 315 L 1585 315 Q 1595 315 1595 321.85 L 1595 328.7" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/><path d="M 1595 337.2 L 1590.75 328.7 L 1599.25 328.7 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g></g><g data-cell-id="wr_fire_to_ptr"><g transform="translate(0.5,0.5)"><path d="M 270 415 L 280 415 Q 290 415 287.45 413.72 L 284.9 412.45" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/><path d="M 292.5 416.25 L 283 416.25 L 286.8 408.65 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g></g><g data-cell-id="wgray_next_to_full"><g transform="translate(0.5,0.5)"><path d="M 460 505 L 460 515 Q 460 525 460 522.5 L 460 521.25 Q 460 520 460 524.35 L 460 528.7" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/><path d="M 460 537.2 L 455.75 528.7 L 464.25 528.7 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g></g><g data-cell-id="full_to_write_outputs"><g transform="translate(0.5,0.5)"><path d="M 305 599.5 L 295 599.5 Q 285 599.5 285 589.75 L 285 584.88 Q 285 580 283.15 580 L 281.3 580" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/><path d="M 272.8 580 L 281.3 575.75 L 281.3 584.25 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g></g><g data-cell-id="write_addr_to_memory"><g transform="translate(0.5,0.5)"><path d="M 625 390 L 635 390 Q 645 390 645 400 L 645 410 Q 645 420 649.35 420 L 653.7 420" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/><path d="M 662.2 420 L 653.7 424.25 L 653.7 415.75 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g></g><g data-cell-id="write_data_to_memory"><g transform="translate(0.5,0.5)"><path d="M 520 700 L 635 700 Q 645 700 645 690 L 645 495 Q 645 485 649.35 485 L 653.7 485" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/><path d="M 662.2 485 L 653.7 489.25 L 653.7 480.75 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g></g><g data-cell-id="read_addr_to_memory"><g transform="translate(0.5,0.5)"><path d="M 1105 390 L 1095 390 Q 1085 390 1085 400 L 1085 525 Q 1085 535 1080.65 535 L 1076.29 535" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/><path d="M 1067.79 535 L 1076.29 530.75 L 1076.29 539.25 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g></g><g data-cell-id="memory_data_to_rd_outputs"><g transform="translate(0.5,0.5)"><path d="M 1365 685 L 1435 685 Q 1445 685 1445 675 L 1445 597.5 Q 1445 587.5 1446.85 587.5 L 1448.7 587.5" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/><path d="M 1457.2 587.5 L 1448.7 591.75 L 1448.7 583.25 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g></g><g data-cell-id="rd_fire_to_ptr"><g transform="translate(0.5,0.5)"><path d="M 1460 415 L 1450 415 Q 1440 415 1442.55 413.72 L 1445.1 412.45" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/><path d="M 1437.5 416.25 L 1443.2 408.65 L 1447 416.25 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g></g><g data-cell-id="rgray_next_to_empty"><g transform="translate(0.5,0.5)"><path d="M 1270 505 L 1270 515 Q 1270 525 1270 522.5 L 1270 521.25 Q 1270 520 1270 524.35 L 1270 528.7" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/><path d="M 1270 537.2 L 1265.75 528.7 L 1274.25 528.7 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g></g><g data-cell-id="rgray_to_cdc"><g transform="translate(0.5,0.5)"><path d="M 1270 505 L 1270 730 Q 1270 740 1260 740 L 525 740 Q 515 740 515 750 L 515 798.7" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/><path d="M 515 807.2 L 510.75 798.7 L 519.25 798.7 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/></g></g><g data-cell-id="cdc_rgray_to_full"><g transform="translate(0.5,0.5)"><path d="M 515 810 L 515 785 Q 515 775 525 775 L 635 775 Q 645 775 645 765 L 645 607.5 Q 645 597.5 640.65 597.5 L 636.3 597.5" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/><path d="M 627.8 597.5 L 636.3 593.25 L 636.3 601.75 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/></g></g><g data-cell-id="wgray_to_cdc"><g transform="translate(0.5,0.5)"><path d="M 915 760 L 1205 760 Q 1215 760 1215 770 L 1215 798.7" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/><path d="M 1215 807.2 L 1210.75 798.7 L 1219.25 798.7 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/></g></g><g data-cell-id="cdc_wgray_to_empty"><g transform="translate(0.5,0.5)"><path d="M 1215 810 L 1215 790 Q 1215 780 1205 780 L 1090 780 Q 1080 780 1080 770 L 1080 635 Q 1080 625 1086.85 625 L 1093.7 625" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/><path d="M 1102.2 625 L 1093.7 629.25 L 1093.7 620.75 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-1"><g transform="translate(0.5,0.5)"><rect x="5" y="305" width="120" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 315px; margin-left: 6px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">wr_rst_n</span></div></div></div></foreignObject><text x="65" y="319" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">wr_rst_n</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-3"><g transform="translate(0.5,0.5)"><rect x="240" y="375" width="60" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 385px; margin-left: 241px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">wr_fire</span></div></div></div></foreignObject><text x="270" y="389" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">wr_fire</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-5"><g transform="translate(0.5,0.5)"><rect x="585" y="365" width="100" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 375px; margin-left: 586px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">wbin[3:0] address</span></div></div></div></foreignObject><text x="635" y="379" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">wbin[3:0] address</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-7"><g transform="translate(0.5,0.5)"><rect x="475" y="513" width="70" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 523px; margin-left: 476px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">wgray_next</span></div></div></div></foreignObject><text x="510" y="527" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">wgray_next</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-8"><g transform="translate(0.5,0.5)"><rect x="215" y="555" width="80" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 565px; margin-left: 216px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">full / overflow</span></div></div></div></foreignObject><text x="255" y="569" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">full / overflow</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-11"><g transform="translate(0.5,0.5)"><path d="M 270 465 L 275 465 Q 280 465 280 475 L 280 690 Q 280 700 290 700 L 388.7 700" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/><path d="M 397.2 700 L 388.7 704.25 L 388.7 695.75 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-10"><g transform="translate(0.5,0.5)"><rect x="400" y="695" width="120" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 705px; margin-left: 401px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">wr_data + wr_fire</span></div></div></div></foreignObject><text x="460" y="709" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">wr_data + wr_fire</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-13"><g transform="translate(0.5,0.5)"><path d="M 460 505 L 460 750 Q 460 760 470 760 L 743.7 760" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/><path d="M 752.2 760 L 743.7 764.25 L 743.7 755.75 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-12"><g transform="translate(0.5,0.5)"><rect x="755" y="755" width="160" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 765px; margin-left: 756px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">wgray → read-domain sync</span></div></div></div></foreignObject><text x="835" y="769" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">wgray → read-domain sync</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-14"><g transform="translate(0.5,0.5)"><rect x="535" y="765" width="170" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 775px; margin-left: 536px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">rgray_sync2 → full compare</span></div></div></div></foreignObject><text x="620" y="779" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">rgray_sync2 → full compare</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-15"><g transform="translate(0.5,0.5)"><rect x="795" y="725" width="160" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 735px; margin-left: 796px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">rgray → write-domain sync</span></div></div></div></foreignObject><text x="875" y="739" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">rgray → write-domain sync</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-16"><g transform="translate(0.5,0.5)"><rect x="985" y="775" width="190" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 785px; margin-left: 986px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">wgray_sync2 → empty compare</span></div></div></div></foreignObject><text x="1080" y="789" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">wgray_sync2 → empty compare</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-17"><g transform="translate(0.5,0.5)"><rect x="1055" y="493" width="100" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 503px; margin-left: 1056px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">rbin[3:0] address</span></div></div></div></foreignObject><text x="1105" y="507" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">rbin[3:0] address</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-18"><g transform="translate(0.5,0.5)"><rect x="1285" y="513" width="80" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 523px; margin-left: 1286px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">rgray_next</span></div></div></div></foreignObject><text x="1325" y="527" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">rgray_next</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-20"><g transform="translate(0.5,0.5)"><path d="M 1065 610 L 1075 610 Q 1085 610 1085 620 L 1085 675 Q 1085 685 1095 685 L 1193.7 685" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/><path d="M 1202.2 685 L 1193.7 689.25 L 1193.7 680.75 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-19"><g transform="translate(0.5,0.5)"><rect x="1205" y="675" width="160" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 685px; margin-left: 1206px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">registered rd_data / rd_valid</span></div></div></div></foreignObject><text x="1285" y="689" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">registered rd_data / rd_valid</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-21"><g transform="translate(0.5,0.5)"><rect x="1405" y="445" width="70" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 455px; margin-left: 1406px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">rd_fire</span></div></div></div></foreignObject><text x="1440" y="459" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">rd_fire</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-22"><g transform="translate(0.5,0.5)"><rect x="1525" y="302" width="100" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 312px; margin-left: 1526px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">rd_rst_n</span></div></div></div></foreignObject><text x="1575" y="316" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">rd_rst_n</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-25"><g transform="translate(0.5,0.5)"><rect x="1125" y="137" width="170" height="28" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 151px; margin-left: 1126px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(185, 106, 19), rgb(196, 128, 53)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">arst_n → u_rd_reset_sync</span></div></div></div></foreignObject><text x="1210" y="155" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">arst_n → u_rd_reset_sync</text></switch></g></g></g><g data-cell-id="WRXtCoZ713ESVt4tbm9m-27"><g transform="translate(0.5,0.5)"><rect x="435" y="137" width="170" height="28" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 151px; margin-left: 436px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(185, 106, 19), rgb(196, 128, 53)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">arst_n → u_wr_reset_sync</span></div></div></div></foreignObject><text x="520" y="155" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">arst_n → u_wr_reset_sync</text></switch></g></g></g><g data-cell-id="h0FdIKjBga_UtHznnXE_-4"><g transform="translate(0.5,0.5)"><rect x="1545" y="505" width="120" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 515px; margin-left: 1546px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">rd_firre --&gt; rd_valid</span></div></div></div></foreignObject><text x="1605" y="519" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">rd_firre --&gt; rd_valid</text></switch></g></g></g><g data-cell-id="h0FdIKjBga_UtHznnXE_-6"><g transform="translate(0.5,0.5)"><path d="M 1673 490 L 1673 516 Q 1673 526 1674 529.5 L 1674.5 531.25 Q 1675 533 1675.65 533 L 1676.3 533" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/><path d="M 1667.8 533 L 1676.3 528.75 L 1676.3 537.25 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/></g></g></g></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent; color-scheme: light;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1862px" height="1282px" viewBox="0 0 1862 1282" id="ge-svg-FbAqk9mhH5D2QvHs_S8Q" content="&lt;mxfile&gt;&lt;diagram id=&quot;cdc-fifo-detailed&quot; name=&quot;CDC FIFO Detailed Connections&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <style type="text/css">
+        @supports (color: light-dark(#000, #fff)) { #ge-svg-FbAqk9mhH5D2QvHs_S8Q { --ge-adaptive-bg: light-dark(#ffffff, var(--ge-dark-color, #121212)); } }
+    </style>
+    <defs/>
+    <g>
+        <g data-cell-id="0">
+            <g data-cell-id="1">
+                <g data-cell-id="3VtOh6HBUIkXz4DjiDNz-2">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="0" y="0" width="1860" height="1280" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                </g>
+                <g data-cell-id="title">
+                    <g>
+                        <rect x="330" y="85" width="1200" height="45" fill="none" stroke="none" pointer-events="all"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1198px; height: 1px; padding-top: 108px; margin-left: 331px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #173b63; ">
+                                            <div style="display: inline-block; font-size: 28px; font-family: Helvetica; color: light-dark(#173b63, #a3c2e4); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                                CDC FIFO — RTL ALIGNED MICROARCHITECHTURE
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="930" y="116" fill="#173b63" font-family="Helvetica" font-size="28px" text-anchor="middle" font-weight="bold" style="fill: light-dark(rgb(23, 59, 99), rgb(163, 194, 228));">
+                                    CDC FIFO — RTL ALIGNED MICROARCHITECHTURE
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="subtitle">
+                    <g>
+                        <rect x="280" y="128" width="1300" height="28" fill="none" stroke="none" pointer-events="all"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1298px; height: 1px; padding-top: 142px; margin-left: 281px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 16px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                Exact RTL signal names • DATA_WIDTH=32 • ADDR_WIDTH=4 • DEPTH=16 • PTR_W=5
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="930" y="147" fill="#203b5b" font-family="Helvetica" font-size="16px" text-anchor="middle" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    Exact RTL signal names • DATA_WIDTH=32 • ADDR_WIDTH=4 • DEPTH=16 • PTR_W=5
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="arst">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="730" y="170" width="400" height="55" rx="8.25" ry="8.25" fill="#fff7e8" stroke="#b96a13" pointer-events="all" style="fill: light-dark(rgb(255, 247, 232), rgb(31, 24, 11)); stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 384px; height: 1px; padding-top: 184px; margin-left: 738px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                TOP-LEVEL RESET
+                                                <br/>
+                                                arst_n (active-low async assertion)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="930" y="197" fill="#203b5b" font-family="Helvetica" font-size="13px" text-anchor="middle" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="930" y="197">
+                                        TOP-LEVEL RESET
+                                    </tspan>
+                                    <tspan x="930" y="213">
+                                        arst_n (active-low async assertion)
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="wr_reset">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="65" y="250" width="350" height="120" rx="18" ry="18" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 334px; height: 1px; padding-top: 264px; margin-left: 74px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                u_wr_reset_sync : reset_sync
+                                                <br/>
+                                                clk = wr_clk
+                                                <br/>
+                                                arst_n = arst_n
+                                                <br/>
+                                                srst_n = wr_rst_n
+                                                <br/>
+                                                STAGES = RESET_SYNC_STAGES
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="74" y="277" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="74" y="277">
+                                        u_wr_reset_sync : reset_sync
+                                    </tspan>
+                                    <tspan x="74" y="293">
+                                        clk = wr_clk
+                                    </tspan>
+                                    <tspan x="74" y="309">
+                                        arst_n = arst_n
+                                    </tspan>
+                                    <tspan x="74" y="325">
+                                        srst_n = wr_rst_n
+                                    </tspan>
+                                    <tspan x="74" y="341">
+                                        STAGES = RESET_SYNC_STAGES
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="rd_reset">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1445" y="250" width="350" height="120" rx="18" ry="18" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 334px; height: 1px; padding-top: 264px; margin-left: 1454px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                u_rd_reset_sync : reset_sync
+                                                <br/>
+                                                clk = rd_clk
+                                                <br/>
+                                                arst_n = arst_n
+                                                <br/>
+                                                srst_n = rd_rst_n
+                                                <br/>
+                                                STAGES = RESET_SYNC_STAGES
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1454" y="277" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="1454" y="277">
+                                        u_rd_reset_sync : reset_sync
+                                    </tspan>
+                                    <tspan x="1454" y="293">
+                                        clk = rd_clk
+                                    </tspan>
+                                    <tspan x="1454" y="309">
+                                        arst_n = arst_n
+                                    </tspan>
+                                    <tspan x="1454" y="325">
+                                        srst_n = rd_rst_n
+                                    </tspan>
+                                    <tspan x="1454" y="341">
+                                        STAGES = RESET_SYNC_STAGES
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-2">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 335 501.04 L 353.63 501.18" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                        <path d="M 358.88 501.22 L 351.86 504.67 L 353.63 501.18 L 351.91 497.67 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                </g>
+                <g data-cell-id="wr_control">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="65" y="425" width="270" height="150" rx="22.5" ry="22.5" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 439px; margin-left: 74px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                WRITE CONTROL (wr_clk)
+                                                <br/>
+                                                Inputs: wr_en, full
+                                                <br/>
+                                                wr_fire = wr_en &amp;&amp; !full
+                                                <br/>
+                                                overflow &lt;= wr_en &amp;&amp; full
+                                                <br/>
+                                                Accepted write advances pointer
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="74" y="452" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="74" y="452">
+                                        WRITE CONTROL (wr_clk)
+                                    </tspan>
+                                    <tspan x="74" y="468">
+                                        Inputs: wr_en, full
+                                    </tspan>
+                                    <tspan x="74" y="484">
+                                        wr_fire = wr_en &amp;&amp; !full
+                                    </tspan>
+                                    <tspan x="74" y="500">
+                                        overflow &lt;= wr_en &amp;&amp; full
+                                    </tspan>
+                                    <tspan x="74" y="516">
+                                        Accepted write advances pointer
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="wr_ptr">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="360" y="415" width="330" height="175" rx="26.25" ry="26.25" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 314px; height: 1px; padding-top: 429px; margin-left: 369px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                WRITE POINTER + GRAY
+                                                <br/>
+                                                wbin, wgray [PTR_W-1:0]
+                                                <br/>
+                                                wbin_next = wbin + wr_fire
+                                                <br/>
+                                                wgray_next = bin_to_gray(wbin_next)
+                                                <br/>
+                                                wr_clk: wbin &lt;= wbin_next
+                                                <br/>
+                                                wr_clk: wgray &lt;= wgray_next
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="369" y="442" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="369" y="442">
+                                        WRITE POINTER + GRAY
+                                    </tspan>
+                                    <tspan x="369" y="458">
+                                        wbin, wgray [PTR_W-1:0]
+                                    </tspan>
+                                    <tspan x="369" y="474">
+                                        wbin_next = wbin + wr_fire
+                                    </tspan>
+                                    <tspan x="369" y="490">
+                                        wgray_next = bin_to_gray(wbin_next)
+                                    </tspan>
+                                    <tspan x="369" y="506">
+                                        wr_clk: wbin &lt;= wbin_next
+                                    </tspan>
+                                    <tspan x="369" y="522">
+                                        wr_clk: wgray &lt;= wgray_next
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="full_cmp">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="360" y="625" width="330" height="115" rx="17.25" ry="17.25" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 314px; height: 1px; padding-top: 639px; margin-left: 369px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                FULL DETECTION (wr_clk)
+                                                <br/>
+                                                full_next = (wgray_next ==
+                                                <br/>
+                                                {~rgray_sync2[PTR_W-1:PTR_W-2],
+                                                <br/>
+                                                rgray_sync2[PTR_W-3:0]})
+                                                <br/>
+                                                full &lt;= full_next
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="369" y="652" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="369" y="652">
+                                        FULL DETECTION (wr_clk)
+                                    </tspan>
+                                    <tspan x="369" y="668">
+                                        full_next = (wgray_next ==
+                                    </tspan>
+                                    <tspan x="369" y="684">
+                                        {~rgray_sync2[PTR_W-1:PTR_W-2],
+                                    </tspan>
+                                    <tspan x="369" y="700">
+                                        rgray_sync2[PTR_W-3:0]})
+                                    </tspan>
+                                    <tspan x="369" y="716">
+                                        full &lt;= full_next
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="wr_outputs">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="65" y="625" width="270" height="80" rx="12" ry="12" fill="#eef6ff" stroke="#2878c8" pointer-events="all" style="fill: light-dark(rgb(238, 246, 255), rgb(21, 27, 35)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 639px; margin-left: 74px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                WRITE OUTPUTS
+                                                <br/>
+                                                full • overflow
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="74" y="652" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="74" y="652">
+                                        WRITE OUTPUTS
+                                    </tspan>
+                                    <tspan x="74" y="668">
+                                        full • overflow
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="memory">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="730" y="415" width="400" height="325" rx="48.75" ry="48.75" fill="#f5f8fc" stroke="#587ca9" pointer-events="all" style="fill: light-dark(rgb(245, 248, 252), rgb(22, 24, 28)); stroke: light-dark(rgb(88, 124, 169), rgb(108, 138, 177));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 384px; height: 1px; padding-top: 429px; margin-left: 738px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                ONE SHARED BEHAVIORAL ARRAY
+                                                <br/>
+                                                mem[0:DEPTH-1]
+                                                <br/>
+                                                Default: 16 words × 32 bits
+                                                <br/>
+                                                <br/>
+                                                WRITE PORT (wr_clk):
+                                                <br/>
+                                                if (wr_fire) mem[wbin[ADDR_WIDTH-1:0]] &lt;= wr_data
+                                                <br/>
+                                                <br/>
+                                                READ PORT (rd_clk):
+                                                <br/>
+                                                if (rd_fire) rd_data &lt;= mem[rbin[ADDR_WIDTH-1:0]]
+                                                <br/>
+                                                rd_valid &lt;= rd_fire
+                                                <br/>
+                                                <br/>
+                                                RTL array placeholder — not an instantiated SRAM macro
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="930" y="442" fill="#203b5b" font-family="Helvetica" font-size="13px" text-anchor="middle" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="930" y="442">
+                                        ONE SHARED BEHAVIORAL ARRAY
+                                    </tspan>
+                                    <tspan x="930" y="458">
+                                        mem[0:DEPTH-1]
+                                    </tspan>
+                                    <tspan x="930" y="474">
+                                        Default: 16 words × 32 bits
+                                    </tspan>
+                                    <tspan x="930" y="490"></tspan>
+                                    <tspan x="930" y="506">
+                                        WRITE PORT (wr_clk):
+                                    </tspan>
+                                    <tspan x="930" y="522">
+                                        if (wr_fire) mem[wbin[ADDR_WIDTH-1:0]] &lt;= wr_data
+                                    </tspan>
+                                    <tspan x="930" y="538"></tspan>
+                                    <tspan x="930" y="554">
+                                        READ PORT (rd_clk):
+                                    </tspan>
+                                    <tspan x="930" y="570">
+                                        if (rd_fire) rd_data &lt;= mem[rbin[ADDR_WIDTH-1:0]]
+                                    </tspan>
+                                    <tspan x="930" y="586">
+                                        rd_valid &lt;= rd_fire
+                                    </tspan>
+                                    <tspan x="930" y="602"></tspan>
+                                    <tspan x="930" y="618">
+                                        RTL array placeholder — not an instantiated SRAM macro
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="rd_ptr">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1170" y="415" width="330" height="175" rx="26.25" ry="26.25" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 314px; height: 1px; padding-top: 429px; margin-left: 1179px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                READ POINTER + GRAY
+                                                <br/>
+                                                rbin, rgray [PTR_W-1:0]
+                                                <br/>
+                                                rbin_next = rbin + rd_fire
+                                                <br/>
+                                                rgray_next = bin_to_gray(rbin_next)
+                                                <br/>
+                                                rd_clk: rbin &lt;= rbin_next
+                                                <br/>
+                                                rd_clk: rgray &lt;= rgray_next
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1179" y="442" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="1179" y="442">
+                                        READ POINTER + GRAY
+                                    </tspan>
+                                    <tspan x="1179" y="458">
+                                        rbin, rgray [PTR_W-1:0]
+                                    </tspan>
+                                    <tspan x="1179" y="474">
+                                        rbin_next = rbin + rd_fire
+                                    </tspan>
+                                    <tspan x="1179" y="490">
+                                        rgray_next = bin_to_gray(rbin_next)
+                                    </tspan>
+                                    <tspan x="1179" y="506">
+                                        rd_clk: rbin &lt;= rbin_next
+                                    </tspan>
+                                    <tspan x="1179" y="522">
+                                        rd_clk: rgray &lt;= rgray_next
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="rd_control">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1525" y="425" width="270" height="150" rx="22.5" ry="22.5" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 439px; margin-left: 1534px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                READ CONTROL (rd_clk)
+                                                <br/>
+                                                Inputs: rd_en, empty
+                                                <br/>
+                                                rd_fire = rd_en &amp;&amp; !empty
+                                                <br/>
+                                                underflow &lt;= rd_en &amp;&amp; empty
+                                                <br/>
+                                                Accepted read advances pointer
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1534" y="452" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="1534" y="452">
+                                        READ CONTROL (rd_clk)
+                                    </tspan>
+                                    <tspan x="1534" y="468">
+                                        Inputs: rd_en, empty
+                                    </tspan>
+                                    <tspan x="1534" y="484">
+                                        rd_fire = rd_en &amp;&amp; !empty
+                                    </tspan>
+                                    <tspan x="1534" y="500">
+                                        underflow &lt;= rd_en &amp;&amp; empty
+                                    </tspan>
+                                    <tspan x="1534" y="516">
+                                        Accepted read advances pointer
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="empty_cmp">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1170" y="625" width="330" height="115" rx="17.25" ry="17.25" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 314px; height: 1px; padding-top: 639px; margin-left: 1179px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                EMPTY DETECTION (rd_clk)
+                                                <br/>
+                                                empty_next = (rgray_next == wgray_sync2)
+                                                <br/>
+                                                empty &lt;= empty_next
+                                                <br/>
+                                                Reset value: empty = 1
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1179" y="652" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="1179" y="652">
+                                        EMPTY DETECTION (rd_clk)
+                                    </tspan>
+                                    <tspan x="1179" y="668">
+                                        empty_next = (rgray_next == wgray_sync2)
+                                    </tspan>
+                                    <tspan x="1179" y="684">
+                                        empty &lt;= empty_next
+                                    </tspan>
+                                    <tspan x="1179" y="700">
+                                        Reset value: empty = 1
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="rd_outputs">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1525" y="625" width="270" height="95" rx="14.25" ry="14.25" fill="#effaf4" stroke="#159b70" pointer-events="all" style="fill: light-dark(rgb(239, 250, 244), rgb(17, 27, 22)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 639px; margin-left: 1534px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                READ OUTPUTS
+                                                <br/>
+                                                rd_data[DATA_WIDTH-1:0]
+                                                <br/>
+                                                rd_valid • empty • underflow
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1534" y="652" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="1534" y="652">
+                                        READ OUTPUTS
+                                    </tspan>
+                                    <tspan x="1534" y="668">
+                                        rd_data[DATA_WIDTH-1:0]
+                                    </tspan>
+                                    <tspan x="1534" y="684">
+                                        rd_valid • empty • underflow
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="cdc_rgray">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="330" y="895" width="500" height="125" rx="18.75" ry="18.75" fill="#f7f0ff" stroke="#8a4bd1" pointer-events="all" style="fill: light-dark(rgb(247, 240, 255), rgb(33, 27, 40)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 484px; height: 1px; padding-top: 909px; margin-left: 339px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                READ POINTER → WRITE DOMAIN
+                                                <br/>
+                                                rgray → rgray_sync1 → rgray_sync2
+                                                <br/>
+                                                Both stages clocked by wr_clk
+                                                <br/>
+                                                Async reset: wr_rst_n
+                                                <br/>
+                                                Used by full comparison
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="339" y="922" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="339" y="922">
+                                        READ POINTER → WRITE DOMAIN
+                                    </tspan>
+                                    <tspan x="339" y="938">
+                                        rgray → rgray_sync1 → rgray_sync2
+                                    </tspan>
+                                    <tspan x="339" y="954">
+                                        Both stages clocked by wr_clk
+                                    </tspan>
+                                    <tspan x="339" y="970">
+                                        Async reset: wr_rst_n
+                                    </tspan>
+                                    <tspan x="339" y="986">
+                                        Used by full comparison
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="cdc_wgray">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1030" y="895" width="500" height="125" rx="18.75" ry="18.75" fill="#f7f0ff" stroke="#8a4bd1" pointer-events="all" style="fill: light-dark(rgb(247, 240, 255), rgb(33, 27, 40)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 484px; height: 1px; padding-top: 909px; margin-left: 1039px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                WRITE POINTER → READ DOMAIN
+                                                <br/>
+                                                wgray → wgray_sync1 → wgray_sync2
+                                                <br/>
+                                                Both stages clocked by rd_clk
+                                                <br/>
+                                                Async reset: rd_rst_n
+                                                <br/>
+                                                Used by empty comparison
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1039" y="922" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="1039" y="922">
+                                        WRITE POINTER → READ DOMAIN
+                                    </tspan>
+                                    <tspan x="1039" y="938">
+                                        wgray → wgray_sync1 → wgray_sync2
+                                    </tspan>
+                                    <tspan x="1039" y="954">
+                                        Both stages clocked by rd_clk
+                                    </tspan>
+                                    <tspan x="1039" y="970">
+                                        Async reset: rd_rst_n
+                                    </tspan>
+                                    <tspan x="1039" y="986">
+                                        Used by empty comparison
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="ports">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="65" y="1070" width="1730" height="150" rx="22.5" ry="22.5" fill="#f5f8fc" stroke="#8ba6c7" pointer-events="all" style="fill: light-dark(rgb(245, 248, 252), rgb(22, 24, 28)); stroke: light-dark(rgb(139, 166, 199), rgb(76, 100, 128));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 1714px; height: 1px; padding-top: 1084px; margin-left: 74px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #203b5b; ">
+                                            <div style="display: inline-block; font-size: 13px; font-family: Helvetica; color: light-dark(#203b5b, #a8c0db); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                TOP-LEVEL PORTS — EXACT NAMES FROM cdc_fifo.sv
+                                                <br/>
+                                                Inputs: arst_n, wr_clk, wr_en, wr_data[DATA_WIDTH-1:0], rd_clk, rd_en
+                                                <br/>
+                                                Outputs: full, overflow, rd_data[DATA_WIDTH-1:0], rd_valid, empty, underflow
+                                                <br/>
+                                                Parameters: DATA_WIDTH=32, ADDR_WIDTH=4, RESET_SYNC_STAGES=2
+                                                <br/>
+                                                Internal reset nets: wr_rst_n, rd_rst_n • Internal controls: wr_fire, rd_fire
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="74" y="1097" fill="#203b5b" font-family="Helvetica" font-size="13px" style="fill: light-dark(rgb(32, 59, 91), rgb(168, 192, 219));">
+                                    <tspan x="74" y="1097">
+                                        TOP-LEVEL PORTS — EXACT NAMES FROM cdc_fifo.sv
+                                    </tspan>
+                                    <tspan x="74" y="1113">
+                                        Inputs: arst_n, wr_clk, wr_en, wr_data[DATA_WIDTH-1:0], rd_clk, rd_en
+                                    </tspan>
+                                    <tspan x="74" y="1129">
+                                        Outputs: full, overflow, rd_data[DATA_WIDTH-1:0], rd_valid, empty, underflow
+                                    </tspan>
+                                    <tspan x="74" y="1145">
+                                        Parameters: DATA_WIDTH=32, ADDR_WIDTH=4, RESET_SYNC_STAGES=2
+                                    </tspan>
+                                    <tspan x="74" y="1161">
+                                        Internal reset nets: wr_rst_n, rd_rst_n • Internal controls: wr_fire, rd_fire
+                                    </tspan>
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="reset_write">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 930 225 L 930 230 Q 930 235 920 235 L 250 235 Q 240 235 240 236.85 L 240 238.7" fill="none" stroke="#b96a13" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/>
+                        <path d="M 240 247.2 L 235.75 238.7 L 244.25 238.7 Z" fill="#b96a13" stroke="#b96a13" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(185, 106, 19), rgb(196, 128, 53)); stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/>
+                    </g>
+                </g>
+                <g data-cell-id="reset_read">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 930 225 L 930 230 Q 930 235 940 235 L 1610 235 Q 1620 235 1620 236.85 L 1620 238.7" fill="none" stroke="#b96a13" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/>
+                        <path d="M 1620 247.2 L 1615.75 238.7 L 1624.25 238.7 Z" fill="#b96a13" stroke="#b96a13" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(185, 106, 19), rgb(196, 128, 53)); stroke: light-dark(rgb(185, 106, 19), rgb(196, 128, 53));"/>
+                    </g>
+                </g>
+                <g data-cell-id="wr_reset_to_domain">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 240 370 L 240 390 Q 240 400 230 400 L 210 400 Q 200 400 200 406.85 L 200 413.7" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                        <path d="M 200 422.2 L 195.75 413.7 L 204.25 413.7 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                </g>
+                <g data-cell-id="rd_reset_to_domain">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1620 370 L 1620 390 Q 1620 400 1630 400 L 1650 400 Q 1660 400 1660 406.85 L 1660 413.7" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                        <path d="M 1660 422.2 L 1655.75 413.7 L 1664.25 413.7 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                </g>
+                <g data-cell-id="wr_fire_to_ptr">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 335 500 L 345 500 Q 355 500 355 501.25 L 355 501.88 Q 355 502.5 351.85 502.5 L 348.7 502.5" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                        <path d="M 357.2 502.5 L 348.7 506.75 L 348.7 498.25 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                </g>
+                <g data-cell-id="wgray_next_to_full">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 525 590 L 525 600 Q 525 610 525 607.5 L 525 606.25 Q 525 605 525 609.35 L 525 613.7" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                        <path d="M 525 622.2 L 520.75 613.7 L 529.25 613.7 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                </g>
+                <g data-cell-id="full_to_write_outputs">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 370 684.5 L 360 684.5 Q 350 684.5 350 674.75 L 350 669.88 Q 350 665 348.15 665 L 346.3 665" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                        <path d="M 337.8 665 L 346.3 660.75 L 346.3 669.25 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                </g>
+                <g data-cell-id="write_addr_to_memory">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 690 475 L 700 475 Q 710 475 710 485 L 710 495 Q 710 505 714.35 505 L 718.7 505" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                        <path d="M 727.2 505 L 718.7 509.25 L 718.7 500.75 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                </g>
+                <g data-cell-id="write_data_to_memory">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 585 785 L 700 785 Q 710 785 710 775 L 710 580 Q 710 570 714.35 570 L 718.7 570" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                        <path d="M 727.2 570 L 718.7 574.25 L 718.7 565.75 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                </g>
+                <g data-cell-id="read_addr_to_memory">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1170 475 L 1160 475 Q 1150 475 1150 485 L 1150 610 Q 1150 620 1145.65 620 L 1141.3 620" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                        <path d="M 1132.8 620 L 1141.3 615.75 L 1141.3 624.25 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                </g>
+                <g data-cell-id="memory_data_to_rd_outputs">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1430 770 L 1500 770 Q 1510 770 1510 760 L 1510 682.5 Q 1510 672.5 1511.85 672.5 L 1513.7 672.5" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                        <path d="M 1522.2 672.5 L 1513.7 676.75 L 1513.7 668.25 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                </g>
+                <g data-cell-id="rd_fire_to_ptr">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1525 500 L 1515 500 Q 1505 500 1505 501.25 L 1505 501.88 Q 1505 502.5 1508.15 502.5 L 1511.3 502.5" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                        <path d="M 1502.8 502.5 L 1511.3 498.25 L 1511.3 506.75 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                </g>
+                <g data-cell-id="rgray_next_to_empty">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1335 590 L 1335 600 Q 1335 610 1335 607.5 L 1335 606.25 Q 1335 605 1335 609.35 L 1335 613.7" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                        <path d="M 1335 622.2 L 1330.75 613.7 L 1339.25 613.7 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                </g>
+                <g data-cell-id="rgray_to_cdc">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1335 590 L 1335 815 Q 1335 825 1325 825 L 590 825 Q 580 825 580 835 L 580 883.7" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                        <path d="M 580 892.2 L 575.75 883.7 L 584.25 883.7 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                    </g>
+                </g>
+                <g data-cell-id="cdc_rgray_to_full">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 580 895 L 580 870 Q 580 860 590 860 L 700 860 Q 710 860 710 850 L 710 692.5 Q 710 682.5 705.65 682.5 L 701.3 682.5" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                        <path d="M 692.8 682.5 L 701.3 678.25 L 701.3 686.75 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                    </g>
+                </g>
+                <g data-cell-id="wgray_to_cdc">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 980 845 L 1270 845 Q 1280 845 1280 855 L 1280 883.7" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                        <path d="M 1280 892.2 L 1275.75 883.7 L 1284.25 883.7 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                    </g>
+                </g>
+                <g data-cell-id="cdc_wgray_to_empty">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1280 895 L 1280 875 Q 1280 865 1270 865 L 1155 865 Q 1145 865 1145 855 L 1145 720 Q 1145 710 1151.85 710 L 1158.7 710" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                        <path d="M 1167.2 710 L 1158.7 714.25 L 1158.7 705.75 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-1">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="70" y="390" width="120" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 400px; margin-left: 71px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    wr_rst_n
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="130" y="404" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    wr_rst_n
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-3">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="305" y="460" width="60" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 470px; margin-left: 306px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    wr_fire
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="335" y="474" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    wr_fire
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-5">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="650" y="450" width="100" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 460px; margin-left: 651px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">
+                                                    wbin[3:0] address
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="700" y="464" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    wbin[3:0] address
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-7">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="540" y="598" width="70" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 608px; margin-left: 541px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    wgray_next
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="575" y="612" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    wgray_next
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-8">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="280" y="640" width="80" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 650px; margin-left: 281px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    full / overflow
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="320" y="654" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    full / overflow
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-11">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 335 550 L 340 550 Q 345 550 345 560 L 345 775 Q 345 785 355 785 L 453.7 785" fill="none" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                        <path d="M 462.2 785 L 453.7 789.25 L 453.7 780.75 Z" fill="#2878c8" stroke="#2878c8" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); stroke: light-dark(rgb(40, 120, 200), rgb(84, 153, 222));"/>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-10">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="465" y="780" width="120" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 790px; margin-left: 466px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(40, 120, 200), rgb(84, 153, 222)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    wr_data + wr_fire
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="525" y="794" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    wr_data + wr_fire
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-13">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 525 590 L 525 835 Q 525 845 535 845 L 808.7 845" fill="none" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" stroke-dasharray="20 15" pointer-events="stroke" style="stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                        <path d="M 817.2 845 L 808.7 849.25 L 808.7 840.75 Z" fill="#8a4bd1" stroke="#8a4bd1" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); stroke: light-dark(rgb(138, 75, 209), rgb(188, 133, 249));"/>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-12">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="820" y="840" width="160" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 850px; margin-left: 821px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    wgray → read-domain sync
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="900" y="854" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    wgray → read-domain sync
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-14">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="600" y="850" width="170" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 860px; margin-left: 601px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;">
+                                                    rgray_sync2 → full compare
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="685" y="864" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    rgray_sync2 → full compare
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-15">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="860" y="810" width="160" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 820px; margin-left: 861px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    rgray → write-domain sync
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="940" y="824" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    rgray → write-domain sync
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-16">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1050" y="860" width="190" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 870px; margin-left: 1051px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(138, 75, 209), rgb(188, 133, 249)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    wgray_sync2 → empty compare
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1145" y="874" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    wgray_sync2 → empty compare
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-17">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1120" y="578" width="100" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 588px; margin-left: 1121px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    rbin[3:0] address
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1170" y="592" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    rbin[3:0] address
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-18">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1350" y="598" width="80" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 608px; margin-left: 1351px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    rgray_next
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1390" y="612" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    rgray_next
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-20">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1130 695 L 1140 695 Q 1150 695 1150 705 L 1150 760 Q 1150 770 1160 770 L 1258.7 770" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                        <path d="M 1267.2 770 L 1258.7 774.25 L 1258.7 765.75 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-19">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1270" y="760" width="160" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 770px; margin-left: 1271px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    registered rd_data / rd_valid
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1350" y="774" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    registered rd_data / rd_valid
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-21">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1470" y="530" width="70" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 540px; margin-left: 1471px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    rd_fire
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1505" y="544" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    rd_fire
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-22">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1590" y="387" width="100" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 397px; margin-left: 1591px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    rd_rst_n
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1640" y="401" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    rd_rst_n
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-25">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1190" y="222" width="170" height="28" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 236px; margin-left: 1191px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(185, 106, 19), rgb(196, 128, 53)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    arst_n → u_rd_reset_sync
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1275" y="240" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    arst_n → u_rd_reset_sync
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="WRXtCoZ713ESVt4tbm9m-27">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="500" y="222" width="170" height="28" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 236px; margin-left: 501px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(185, 106, 19), rgb(196, 128, 53)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    arst_n → u_wr_reset_sync
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="585" y="240" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    arst_n → u_wr_reset_sync
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="h0FdIKjBga_UtHznnXE_-4">
+                    <g transform="translate(0.5,0.5)">
+                        <rect x="1610" y="590" width="120" height="20" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: var(--ge-adaptive-bg, #ffffff); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+                    </g>
+                    <g>
+                        <g>
+                            <switch>
+                                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 600px; margin-left: 1611px;">
+                                        <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                                <span style="color: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); white-space: nowrap; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));">
+                                                    rd_firre --&gt; rd_valid
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </foreignObject>
+                                <text x="1670" y="604" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+                                    rd_firre --&gt; rd_valid
+                                </text>
+                            </switch>
+                        </g>
+                    </g>
+                </g>
+                <g data-cell-id="h0FdIKjBga_UtHznnXE_-6">
+                    <g transform="translate(0.5,0.5)">
+                        <path d="M 1738 575 L 1738 601 Q 1738 611 1739 614.5 L 1739.5 616.25 Q 1740 618 1740.65 618 L 1741.3 618" fill="none" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                        <path d="M 1732.8 618 L 1741.3 613.75 L 1741.3 622.25 Z" fill="#159b70" stroke="#159b70" stroke-width="2.5" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(21, 155, 112), rgb(43, 158, 121)); stroke: light-dark(rgb(21, 155, 112), rgb(43, 158, 121));"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>
